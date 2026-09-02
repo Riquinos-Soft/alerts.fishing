@@ -1,6 +1,8 @@
 # Especificación 001: oportunidad de pesca MVP
 
-**Estado: `proposed`. Implementación: no iniciada.**
+**Estado: `decided`. Implementación: no iniciada.**
+
+La especificación queda aceptada como contrato documental del primer vertical slice. Su cierre documental no implica que los criterios de aceptación estén cumplidos ni que exista una implementación.
 
 ## Problema
 
@@ -102,4 +104,3 @@ Como pescador, quiero comparar oportunidades de demostración para mis spots den
 - No se presentan datos, coordenadas, normativa o seguridad no verificadas como hechos.
 - La documentación, la especificación y el comportamiento están sincronizados.
 - Se han ejecutado las validaciones disponibles y actualizado el changelog.
-
