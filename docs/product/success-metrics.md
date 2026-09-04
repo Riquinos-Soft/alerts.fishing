@@ -1,27 +1,26 @@
-# Métricas de éxito
+# Success metrics
 
-**Estado: `proposed`; definiciones y objetivos: `needs-validation`.**
+**Status: `proposed`; definitions and targets: `needs-validation`.**
 
-## Métrica principal
+## Primary metric
 
-**Decisiones de pesca consideradas útiles por pescador activo.**
+**Fishing decisions considered useful per active angler.**
 
-La métrica busca capturar valor en la decisión, aunque una sesión termine sin capturas. Requiere definir qué es un pescador activo, cómo se solicita feedback y qué umbral representa utilidad.
+The metric seeks to capture value in the decision even when a session ends without catches. It requires defining an active angler, how feedback is requested, and what threshold represents usefulness.
 
-## Métricas secundarias
+## Secondary metrics
 
-- sesiones registradas;
-- porcentaje de sesiones con feedback;
-- porcentaje de bolos registrados;
-- utilidad percibida de la explicación;
-- precisión histórica cuando exista suficiente información;
-- retención;
-- alertas que terminan en sesión.
+- sessions recorded;
+- percentage of sessions with feedback;
+- percentage of blank sessions recorded;
+- perceived usefulness of the explanation;
+- historical accuracy when sufficient information exists;
+- retention;
+- alerts that lead to a session.
 
 ## Guardrails
 
-- No utilizar la cantidad de peces muertos como métrica principal.
-- No confundir capturas con calidad de decisión.
-- Segmentar resultados por versión del scoring, confianza y disponibilidad de datos.
-- Evitar afirmar precisión estadística antes de contar con una muestra suficiente y un método documentado.
-
+- Do not use the number of fish killed as the primary metric.
+- Do not confuse catches with decision quality.
+- Segment outcomes by scoring version, confidence, and data availability.
+- Avoid claiming statistical accuracy before there is a sufficient sample and a documented method.

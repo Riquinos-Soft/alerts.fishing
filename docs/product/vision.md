@@ -1,35 +1,34 @@
-# Visión del producto
+# Product vision
 
-**Estado: `decided`.**
+**Status: `decided`.**
 
-`alerts.fishing` pretende pasar de mostrar meteorología genérica a producir una decisión pesquera local, explicable y evaluable.
+`alerts.fishing` aims to move from displaying generic weather information to producing a local, explainable, and evaluable fishing decision.
 
-## Problema
+## Problem
 
-Un pescador puede consultar muchas variables y aun así no saber dónde, cuándo o cómo actuar. La información dispersa tampoco deja claro qué calidad tiene, por qué una ventana parece favorable ni si una restricción de seguridad la invalida.
+An angler can consult many variables and still not know where, when, or how to act. Scattered information also fails to make its quality clear, explain why a window appears favorable, or indicate whether a safety restriction invalidates it.
 
-## Propuesta
+## Proposal
 
-El producto recomendará dónde, cuándo y cómo pescar; explicará los factores favorables y desfavorables; mostrará la confianza de los datos; y aprenderá del resultado de sesiones completas, incluidas aquellas sin capturas.
+The product will recommend where, when, and how to fish; explain favorable and unfavorable factors; show confidence in the data; and learn from the outcomes of complete sessions, including those without catches.
 
-La primera región será Rías Baixas, Galicia; la primera especie, lubina europea; y la primera modalidad, spinning desde costa. El horizonte inicial será de 72 horas.
+The first region will be Rías Baixas, Galicia; the first species, European seabass; and the first method, shore spinning. The initial horizon will be 72 hours.
 
-## Resultado buscado
+## Desired outcome
 
-Una recomendación debe permitir al pescador:
+A recommendation must allow the angler to:
 
-1. decidir si merece la pena organizar una sesión;
-2. entender qué elementos sostienen o debilitan la recomendación;
-3. distinguir potencial pesquero, confianza de datos y seguridad;
-4. registrar el resultado para evaluar y mejorar el sistema.
+1. decide whether organizing a session is worthwhile;
+2. understand which elements support or weaken the recommendation;
+3. distinguish fishing potential, data confidence, and safety;
+4. record the outcome to evaluate and improve the system.
 
-Una recomendación nunca será una promesa de captura. Las reglas, coordenadas, condiciones y datos no verificados no se presentarán como hechos.
+A recommendation will never be a promise of a catch. Unverified rules, coordinates, conditions, and data will not be presented as facts.
 
-## Dirección del producto
+## Product direction
 
-- `decided`: construir primero la aplicación web.
-- `proposed`: ofrecer una PWA en la primera etapa de producto.
-- `future`: crear una aplicación iOS después de validar el producto.
-- `future`: incorporar tutoriales de YouTube mediante enlaces o reproductores oficiales.
-- `future`: explorar agentes de IA sin convertirlos en autoridad única de scoring, normativa o seguridad.
-
+- `decided`: build the web application first.
+- `proposed`: offer a PWA in the first product phase.
+- `future`: create an iOS application after validating the product.
+- `future`: include YouTube tutorials through official links or players.
+- `future`: explore AI agents without making them the sole authority on scoring, regulations, or safety.

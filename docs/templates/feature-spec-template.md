@@ -1,50 +1,49 @@
-# Especificación NNN: título
+# Specification NNN: title
 
-- **Estado:** `proposed` | `decided` | `future` | `needs-validation`.
-- **Responsable:** por asignar.
-- **Última actualización:** AAAA-MM-DD.
+- **Status:** `proposed` | `decided` | `future` | `needs-validation`.
+- **Owner:** to be assigned.
+- **Last updated:** YYYY-MM-DD.
 
-## Problema
+## Problem
 
-¿Qué decisión o tarea de pesca necesita mejorar?
+What fishing decision or task needs improvement?
 
-## Usuario
+## User
 
-¿Para quién y en qué contexto local?
+For whom and in what local context?
 
-## Historia principal
+## Main story
 
-Como…, quiero…, para…
+As a…, I want…, so that…
 
-## Alcance
+## Scope
 
-¿Qué incluye este incremento?
+What does this increment include?
 
-## Fuera de alcance
+## Out of scope
 
-¿Qué se aplaza explícitamente?
+What is explicitly deferred?
 
-## Modelo conceptual
+## Conceptual model
 
-Conceptos y relaciones necesarios, sin anticipar implementación innecesaria.
+Necessary concepts and relationships, without anticipating unnecessary implementation.
 
-## Comportamiento esperado
+## Expected behavior
 
-Recorrido observable de principio a fin.
+Observable journey from beginning to end.
 
-## Criterios de aceptación
+## Acceptance criteria
 
-- [ ] Criterio verificable.
+- [ ] Verifiable criterion.
 
-## Riesgos
+## Risks
 
-Riesgos de producto, datos, seguridad, privacidad, normativa y comprensión.
+Product, data, safety, privacy, regulatory, and comprehension risks.
 
-## Preguntas abiertas
+## Open questions
 
-- `needs-validation`: pregunta.
+- `needs-validation`: question.
 
-## Definición de hecho
+## Definition of done
 
-Validaciones, sincronización documental y evidencia necesarias para cerrar el incremento.
-
+Validations, documentation synchronization, and evidence required to close the increment.

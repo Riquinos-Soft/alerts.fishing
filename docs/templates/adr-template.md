@@ -1,27 +1,26 @@
-# ADR-NNNN: título
+# ADR-NNNN: title
 
-- **Estado:** `proposed` | `decided` | `superseded` | `deprecated`.
-- **Fecha:** AAAA-MM-DD.
-- **Sustituye a:** opcional.
-- **Sustituido por:** opcional.
+- **Status:** `proposed` | `decided` | `superseded` | `deprecated`.
+- **Date:** YYYY-MM-DD.
+- **Supersedes:** optional.
+- **Superseded by:** optional.
 
-## Contexto
+## Context
 
-¿Qué necesidad, restricción o tensión exige una decisión?
+What need, constraint, or tension requires a decision?
 
-## Decisión
+## Decision
 
-¿Qué dirección se adopta y dentro de qué límites?
+What direction is adopted and within what boundaries?
 
-## Consecuencias
+## Consequences
 
-¿Qué mejora, qué coste introduce y qué trabajo futuro condiciona?
+What does it improve, what cost does it introduce, and what future work does it constrain?
 
-## Alternativas consideradas
+## Alternatives considered
 
-¿Qué opciones se valoraron y por qué no se eligieron?
+What options were evaluated and why were they not selected?
 
-## Validación
+## Validation
 
-¿Qué evidencia podría confirmar o hacer revisar la decisión?
-
+What evidence could confirm the decision or cause it to be reconsidered?

@@ -1,31 +1,30 @@
-# Privacidad y ubicación
+# Privacy and location
 
-**Estado: `decided` para privacidad por defecto; controles concretos: `proposed`.**
+**Status: `decided` for privacy by default; specific controls: `proposed`.**
 
-La ubicación exacta nunca será pública por defecto. La visibilidad debe ser explícita, revocable y adecuada a la sensibilidad del spot.
+Exact location will never be public by default. Visibility must be explicit, revocable, and appropriate to the sensitivity of the spot.
 
-## Niveles previstos
+## Planned levels
 
-- **Solo usuario:** ubicación exacta.
-- **Contacto de seguridad:** ubicación exacta y temporal, con consentimiento y caducidad.
-- **Círculo de confianza:** visibilidad elegida por el usuario.
-- **Comunidad pública:** ubicación retrasada y aproximada.
-- **Spots sensibles:** ubicación oculta.
+- **User only:** exact location.
+- **Safety contact:** exact, temporary location with consent and expiration.
+- **Trusted circle:** visibility selected by the user.
+- **Public community:** delayed, approximate location.
+- **Sensitive spots:** hidden location.
 
-## Reglas
+## Rules
 
-- La ubicación pública exacta en tiempo real no será el comportamiento predeterminado.
-- Una recomendación no debe revelar coordenadas que no sean públicas, necesarias y verificadas.
-- La geometría precisa y la representación pública deben modelarse por separado.
-- Compartir por seguridad no implica consentimiento para publicar o conservar indefinidamente.
-- Debe ser posible retirar acceso futuro sin reescribir la historia pública de forma engañosa.
+- Public, exact, real-time location will not be the default behavior.
+- A recommendation must not reveal coordinates unless they are public, necessary, and verified.
+- Precise geometry and public representation must be modeled separately.
+- Sharing for safety does not imply consent to publish or retain indefinitely.
+- It must be possible to withdraw future access without misleadingly rewriting public history.
 
-## Pendiente
+## Pending
 
-- `needs-validation`: precisión, retraso y agregación apropiados para la comunidad.
-- `needs-validation`: retención, consentimiento y eliminación de datos de ubicación.
-- `needs-validation`: criterios para clasificar spots sensibles.
-- `needs-validation`: requisitos legales aplicables antes de manejar ubicación personal.
+- `needs-validation`: appropriate precision, delay, and aggregation for the community.
+- `needs-validation`: retention, consent, and deletion of location data.
+- `needs-validation`: criteria for classifying sensitive spots.
+- `needs-validation`: applicable legal requirements before handling personal location.
 
-[Strava Beacon](https://support.strava.com/en-us/articles/15401829-strava-beacon) queda registrado como referencia externa de producto en estado `not-integrated`; su funcionamiento y condiciones deben revisarse antes de derivar requisitos.
-
+[Strava Beacon](https://support.strava.com/en-us/articles/15401829-strava-beacon) is recorded as an external product reference with `not-integrated` status; its behavior and terms must be reviewed before deriving requirements.

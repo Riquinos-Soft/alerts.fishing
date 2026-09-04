@@ -1,25 +1,24 @@
-# ADR-0003: aplicación web primero
+# ADR-0003: web application first
 
-- **Estado:** `decided` como dirección; implementación no iniciada.
-- **Fecha:** 2026-09-02.
+- **Status:** `decided` as a direction; implementation not started.
+- **Date:** 2026-09-02.
 
-## Contexto
+## Context
 
-La prioridad es validar si una recomendación local, explicable y evaluable ayuda a tomar decisiones de pesca. Construir simultáneamente experiencias web y nativas ampliaría el alcance antes de demostrar utilidad.
+The priority is to validate whether a local, explainable, and evaluable recommendation helps people make fishing decisions. Building web and native experiences simultaneously would broaden the scope before usefulness has been demonstrated.
 
-## Decisión
+## Decision
 
-Construir primero la aplicación web, con una PWA como dirección propuesta inicial. Considerar una aplicación iOS solo después de validar el producto y conocer necesidades nativas reales.
+Build the web application first, with a PWA as the initially proposed direction. Consider an iOS application only after validating the product and understanding real native needs.
 
-## Consecuencias
+## Consequences
 
-- Un único recorrido inicial concentra aprendizaje y esfuerzo.
-- El vertical slice puede validar score, confianza, seguridad, sesiones y bolos antes de inversión nativa.
-- Las capacidades exclusivamente nativas quedan fuera del MVP.
-- La futura aplicación iOS deberá justificarse por evidencia, no por paridad automática.
+- A single initial journey concentrates learning and effort.
+- The vertical slice can validate score, confidence, safety, sessions, and blank sessions before native investment.
+- Native-only capabilities remain outside the MVP.
+- A future iOS application must be justified by evidence, not automatic parity.
 
-## Estado posterior
+## Subsequent status
 
-- `proposed`: PWA inicial.
-- `future`: aplicación iOS después de validar el producto.
-
+- `proposed`: initial PWA.
+- `future`: iOS application after product validation.

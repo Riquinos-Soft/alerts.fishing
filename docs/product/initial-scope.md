@@ -1,37 +1,36 @@
-# Alcance inicial
+# Initial scope
 
-**Estado: `decided` para el primer vertical slice.**
+**Status: `decided` for the first vertical slice.**
 
-## Entra
+## In scope
 
-- Tres spots de demostración: Aguete, Praia do Santo (Seixo) y Placeres/Lourizán.
-- Lubina europea.
-- Spinning desde costa.
-- Recomendaciones para las próximas 72 horas.
-- Datos mock, siempre etiquetados como simulados o de demostración.
-- Score de 0 a 100 con explicación de factores.
-- Confianza separada del score.
-- Estado de seguridad capaz de invalidar una ventana.
-- Registro de sesiones, capturas y bolos.
+- Three demonstration spots: Aguete, Praia do Santo (Seixo), and Placeres/Lourizán.
+- European seabass.
+- Shore spinning.
+- Recommendations for the next 72 hours.
+- Mock data, always labeled as simulated or demonstration data.
+- Score from 0 to 100 with an explanation of factors.
+- Confidence separate from the score.
+- Safety status capable of invalidating a window.
+- Recording sessions, catches, and blank sessions.
 
-Los nombres de los spots son contexto confirmado, pero sus coordenadas, límites, accesos y condiciones específicas quedan en estado `needs-validation` hasta disponer de fuentes adecuadas.
+The spot names are confirmed context, but their coordinates, boundaries, access, and specific conditions remain `needs-validation` until suitable sources are available.
 
-## No entra todavía
+## Not yet in scope
 
-- `future`: datos meteorológicos u oceanográficos reales.
-- `future`: autenticación y cuentas.
-- `future`: pagos.
-- `future`: mapas avanzados.
-- `future`: integración con Telegram.
+- `future`: real weather or oceanographic data.
+- `future`: authentication and accounts.
+- `future`: payments.
+- `future`: advanced maps.
+- `future`: Telegram integration.
 - `future`: YouTube Data API.
-- `future`: red social.
-- `future`: ubicación en tiempo real.
+- `future`: social network.
+- `future`: real-time location.
 - `future`: machine learning.
 - `future`: LLM.
-- `future`: agentes especializados.
-- `future`: aplicación iOS.
+- `future`: specialized agents.
+- `future`: iOS application.
 
-## Límite del primer vertical
+## First vertical slice boundary
 
-El vertical debe demostrar el recorrido completo de una oportunidad: seleccionar uno de los tres spots, ver ventanas mock dentro de 72 horas, entender score, confianza y seguridad, y registrar después una sesión con o sin capturas. No valida aún la exactitud de proveedores reales ni del algoritmo.
-
+The vertical slice must demonstrate the complete flow of an opportunity: select one of the three spots, view mock windows within 72 hours, understand score, confidence, and safety, and then record a session with or without catches. It does not yet validate the accuracy of real providers or the algorithm.

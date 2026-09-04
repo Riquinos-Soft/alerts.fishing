@@ -1,67 +1,66 @@
-# Proveedores y referencias externas
+# External providers and references
 
-Todas las entradas tienen estado **`not-integrated`**. Antes de usar datos se debe verificar licencia, atribución, condiciones, acceso técnico, cobertura, frescura y límites de redistribución. Su inclusión no implica respaldo, integración ni exactitud validada.
+All entries have **`not-integrated`** status. Before using data, license, attribution, terms, technical access, coverage, freshness, and redistribution limits must be verified. Inclusion does not imply endorsement, integration, or validated accuracy.
 
 ## Fishing Points
 
 - **URL:** <https://apps.apple.com/us/app/fishing-points-map-forecast/id1203032512>
-- **Finalidad potencial:** referencia inicial de producto y categoría para estudiar cómo se presentan mapas, pronósticos y decisiones de pesca.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución y condiciones de uso; no se presupone acceso ni reutilización de sus datos.
+- **Potential purpose:** initial product and category reference for studying how maps, forecasts, and fishing decisions are presented.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, and terms of use; access to or reuse of its data is not assumed.
 
 ## Puertos del Estado — Oceanografía
 
 - **URL:** <https://www.puertos.es/servicios/oceanografia>
-- **Finalidad potencial:** explorar observaciones y predicciones oceanográficas relevantes para el litoral.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución, condiciones, cobertura en Rías Baixas, resolución, actualización y garantías del servicio.
+- **Potential purpose:** explore oceanographic observations and forecasts relevant to the coast.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, terms, coverage in Rías Baixas, resolution, update frequency, and service guarantees.
 
 ## PORTUS
 
 - **URL:** <https://portus.puertos.es/>
-- **Finalidad potencial:** explorar acceso y visualización de información oceanográfica y portuaria.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución, condiciones, disponibilidad técnica, cobertura y semántica de variables.
+- **Potential purpose:** explore access to and visualization of oceanographic and port information.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, terms, technical availability, coverage, and variable semantics.
 
 ## AEMET — Predicción marítima
 
 - **URL:** <https://www.aemet.es/es/eltiempo/prediccion/maritima>
-- **Finalidad potencial:** referencia oficial para predicción marítima y avisos aplicables.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución, condiciones, vigencia, alcance geográfico, frecuencia y canal técnico autorizado.
+- **Potential purpose:** official reference for applicable marine forecasts and warnings.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, terms, currency, geographic scope, frequency, and authorized technical channel.
 
 ## Copernicus Marine
 
 - **URL:** <https://data.marine.copernicus.eu/products>
-- **Finalidad potencial:** investigar productos marinos con variables, cobertura y resolución útiles para condiciones costeras.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución, condiciones de cada producto, resolución costera, latencia, incertidumbre y coste operativo.
+- **Potential purpose:** research marine products with variables, coverage, and resolution useful for coastal conditions.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, terms for each product, coastal resolution, latency, uncertainty, and operational cost.
 
 ## PescaREC
 
 - **URL:** <https://www.mapa.gob.es/es/pesca/temas/pesca-maritima-de-recreo/pesca-rec/>
-- **Finalidad potencial:** referencia oficial externa para información y servicios de pesca marítima recreativa.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución, condiciones, vigencia y jurisdicción. No es una funcionalidad que `alerts.fishing` sustituya.
+- **Potential purpose:** official external reference for recreational marine fishing information and services.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, terms, currency, and jurisdiction. It is not a feature that `alerts.fishing` replaces.
 
 ## SIPMAR Xunta — Especies
 
 - **URL:** <https://pescreativa.xunta.gal/es/especies>
-- **Finalidad potencial:** referencia oficial externa sobre especies y normativa de pesca recreativa en Galicia.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución, condiciones, vigencia, idioma, jurisdicción y procedimiento de actualización.
+- **Potential purpose:** official external reference on species and recreational fishing regulations in Galicia.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, terms, currency, language, jurisdiction, and update procedure.
 
 ## YouTube Data API
 
 - **URL:** <https://developers.google.com/youtube/v3/docs/search/list>
-- **Finalidad potencial:** descubrir posteriormente tutoriales que se mostrarían mediante enlaces o reproductores oficiales.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución, condiciones de API, cuotas, privacidad y políticas de reproducción. No forma parte del alcance inicial.
+- **Potential purpose:** later discovery of tutorials that would be displayed through official links or players.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, API terms, quotas, privacy, and playback policies. It is not part of the initial scope.
 
 ## Strava Beacon
 
 - **URL:** <https://support.strava.com/en-us/articles/15401829-strava-beacon>
-- **Finalidad potencial:** referencia de producto para investigar ubicación temporal compartida con contactos de seguridad.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** condiciones, privacidad y alcance funcional; no se reutilizarán datos ni se asumirá equivalencia con los requisitos de pesca.
-
+- **Potential purpose:** product reference for researching temporary location sharing with safety contacts.
+- **Status:** `not-integrated`.
+- **Prior verification:** terms, privacy, and feature scope; no data will be reused, and equivalence to fishing requirements will not be assumed.

@@ -1,51 +1,50 @@
 # alerts.fishing — Home
 
-Índice principal y fuente de verdad documental del producto.
+Main index and documentary source of truth for the product.
 
-## Estado del proyecto
+## Project status
 
-- **Estado actual:** `decided` — documentación inicial.
-- **Siguiente hito:** preparar el primer vertical slice con datos mock.
-- **Última actualización:** 2026-09-02.
-- **Aplicación funcional:** no existe todavía.
+- **Current status:** `decided` — initial documentation.
+- **Next milestone:** prepare the first vertical slice with mock data.
+- **Last updated:** 2026-09-02.
+- **Functional application:** does not exist yet.
 
-## Navegación principal
+## Main navigation
 
-- [Visión del producto](product/vision.md)
-- [Alcance inicial](product/initial-scope.md)
-- [Mapa de funcionalidades](product/feature-map.md)
-- [Arquitectura prevista](architecture/overview.md)
-- [Especificación 001: oportunidad de pesca MVP](specs/001-fishing-opportunity-mvp.md)
+- [Product vision](product/vision.md)
+- [Initial scope](product/initial-scope.md)
+- [Feature map](product/feature-map.md)
+- [Planned architecture](architecture/overview.md)
+- [Specification 001: fishing opportunity MVP](specs/001-fishing-opportunity-mvp.md)
 - [Roadmap](roadmap/roadmap.md)
 - [Backlog](roadmap/backlog.md)
-- [Decisiones](decisions/README.md)
-- [Índice de investigación](research/research-index.md)
+- [Decisions](decisions/README.md)
+- [Research index](research/research-index.md)
 - [Changelog](changelog.md)
 - [Inbox](00-inbox.md)
 
-## Producto
+## Product
 
-- [Principios](product/principles.md)
-- [Análisis competitivo](product/competitive-analysis.md)
-- [Métricas de éxito](product/success-metrics.md)
+- [Principles](product/principles.md)
+- [Competitive analysis](product/competitive-analysis.md)
+- [Success metrics](product/success-metrics.md)
 
-## Arquitectura y dominio
+## Architecture and domain
 
-- [Mapa de dominio](architecture/domain-map.md)
-- [Principios de scoring](architecture/scoring-principles.md)
-- [Privacidad y ubicación](architecture/privacy-and-location.md)
-- [Agentes futuros](architecture/future-agents.md)
+- [Domain map](architecture/domain-map.md)
+- [Scoring principles](architecture/scoring-principles.md)
+- [Privacy and location](architecture/privacy-and-location.md)
+- [Future agents](architecture/future-agents.md)
 
-## Decisiones pendientes principales
+## Main pending decisions
 
-- `needs-validation`: definir criterios verificables de seguridad para invalidar ventanas.
-- `needs-validation`: seleccionar y validar proveedores reales, licencias, atribución, cobertura y frescura.
-- `needs-validation`: concretar los límites públicos de los tres spots sin presentar coordenadas no verificadas.
-- `needs-validation`: definir pesos, umbrales y protocolo de evaluación del scoring con evidencia.
-- `needs-validation`: confirmar normativa aplicable y su mecanismo de actualización desde fuentes oficiales.
+- `needs-validation`: define verifiable safety criteria for invalidating windows.
+- `needs-validation`: select and validate real providers, licenses, attribution, coverage, and freshness.
+- `needs-validation`: define the public boundaries of the three spots without presenting unverified coordinates.
+- `needs-validation`: define scoring weights, thresholds, and evaluation protocol with evidence.
+- `needs-validation`: confirm applicable regulations and their update mechanism using official sources.
 
-## Apoyo
+## Supporting material
 
-- [Glosario](glossary.md)
-- [Plantillas](templates/feature-spec-template.md)
-
+- [Glossary](glossary.md)
+- [Templates](templates/feature-spec-template.md)

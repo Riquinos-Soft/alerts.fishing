@@ -1,13 +1,12 @@
 # Inbox
 
-Espacio de captura para preguntas, ideas y evidencia todavía no clasificada. Un elemento del inbox no representa una decisión.
+Capture space for questions, ideas, and evidence that have not yet been classified. An inbox item does not represent a decision.
 
-## Pendiente de clasificar
+## Pending classification
 
-- `needs-validation`: fuentes y resolución necesarias para cada factor de condiciones.
-- `needs-validation`: definición operativa de una sesión considerada útil.
-- `needs-validation`: forma de representar los límites aproximados de cada spot de demostración.
-- `needs-validation`: protocolo para revisar seguridad y normativa antes de mostrar una recomendación.
+- `needs-validation`: sources and resolution required for each conditions factor.
+- `needs-validation`: operational definition of a session considered useful.
+- `needs-validation`: way to represent the approximate boundaries of each demonstration spot.
+- `needs-validation`: protocol for reviewing safety and regulations before displaying a recommendation.
 
-Cuando un elemento madure, debe trasladarse a producto, arquitectura, investigación, roadmap, especificación o ADR y eliminarse de esta lista.
-
+When an item matures, it must be moved to product, architecture, research, roadmap, specification, or ADR documentation and removed from this list.

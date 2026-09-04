@@ -1,82 +1,82 @@
-# Reglas de trabajo para agentes
+# Working rules for agents
 
-Estas reglas se aplican a futuros cambios en `alerts.fishing`.
+These rules apply to future changes in `alerts.fishing`.
 
-## Ámbito del repositorio
+## Repository scope
 
-- Este repositorio pertenece únicamente a `alerts.fishing`.
-- No introducir referencias ni dependencias hacia `alerts.surf`.
-- No acoplar la lógica futura del dominio de pesca al nombre comercial del producto.
-- Preservar la estructura documental y el contenido existente.
-- Mantener `.obsidian/` intacto e ignorado.
-- No realizar trabajo fuera del objetivo solicitado.
+- This repository belongs exclusively to `alerts.fishing`.
+- Do not introduce references or dependencies to `alerts.surf`.
+- Do not couple future fishing-domain logic to the product's commercial name.
+- Preserve the existing documentation structure and content.
+- Keep `.obsidian/` intact and ignored.
+- Do not perform work outside the requested objective.
 
-## Antes de cambiar el repositorio
+## Before changing the repository
 
-- Leer [docs/Home.md](docs/Home.md) antes de realizar cambios amplios.
-- Revisar el estado de Git y preservar todos los cambios existentes del usuario.
-- Confirmar en la documentación qué está decidido, propuesto, pendiente de validación o reservado para el futuro.
+- Read [docs/Home.md](docs/Home.md) before making broad changes.
+- Review Git status and preserve all existing user changes.
+- Confirm in the documentation what is decided, proposed, pending validation, or reserved for the future.
 
-## Spec-Driven Development obligatorio
+## Mandatory Spec-Driven Development
 
-Cualquier funcionalidad o cambio de comportamiento debe seguir esta secuencia antes de considerarse terminado:
+Any feature or behavior change must follow this sequence before it is considered complete:
 
-1. Crear o actualizar una especificación.
-2. Definir el problema, los objetivos, los requisitos y lo que queda fuera de alcance.
-3. Establecer criterios de aceptación verificables.
-4. Identificar riesgos, supuestos y puntos pendientes de validación.
-5. Preparar el plan técnico y dividirlo en tareas pequeñas.
-6. Derivar las pruebas de los criterios de aceptación.
-7. Implementar únicamente lo definido en la especificación.
-8. Ejecutar las validaciones correspondientes.
-9. Sincronizar la documentación, las decisiones y el changelog.
-10. Confirmar que la implementación y la especificación no se contradicen.
+1. Create or update a specification.
+2. Define the problem, goals, requirements, and what is out of scope.
+3. Establish verifiable acceptance criteria.
+4. Identify risks, assumptions, and points pending validation.
+5. Prepare the technical plan and divide it into small tasks.
+6. Derive tests from the acceptance criteria.
+7. Implement only what the specification defines.
+8. Run the relevant validations.
+9. Synchronize the documentation, decisions, and changelog.
+10. Confirm that the implementation and specification do not contradict each other.
 
-No implementar ninguna funcionalidad relevante sin una especificación aprobada o marcada explícitamente con el estado adecuado. Mantener los estados documentales existentes:
+Do not implement any significant feature without an approved specification or one explicitly marked with the appropriate status. Preserve the existing documentation states:
 
-- `decided`: decisión actual aceptada, aunque todavía pueda no estar implementada.
-- `proposed`: dirección propuesta pendiente de confirmación.
-- `future`: trabajo fuera del alcance inmediato y reservado para una fase posterior.
-- `needs-validation`: hipótesis, dato o decisión que requiere evidencia o una fuente vigente.
-- `not-integrated`: fuente identificada, pero sin integración técnica.
+- `decided`: current accepted decision, although it may not yet be implemented.
+- `proposed`: proposed direction pending confirmation.
+- `future`: work outside the immediate scope and reserved for a later phase.
+- `needs-validation`: hypothesis, data, or decision that requires evidence or a current source.
+- `not-integrated`: identified source without technical integration.
 
-No describir como implementado nada que todavía sea una propuesta.
+Do not describe anything as implemented while it is still a proposal.
 
-## Forma de trabajo
+## Working approach
 
-- Trabajar en vertical slices pequeños, verificables y vinculados a una necesidad del dominio de pesca.
-- No añadir dependencias sin una justificación explícita.
-- No crear microservicios prematuramente; la dirección decidida es un monolito modular.
-- No presentar datos mock, simulados o de demostración como datos reales.
-- No ofrecer certeza legal o de seguridad sin fuentes oficiales vigentes y verificadas.
-- No publicar coordenadas sensibles ni hacer pública por defecto una ubicación exacta.
-- Mantener sincronizados las especificaciones y el comportamiento implementado.
-- Ejecutar las validaciones disponibles antes de declarar una tarea terminada.
+- Work in small, verifiable vertical slices linked to a fishing-domain need.
+- Do not add dependencies without explicit justification.
+- Do not create microservices prematurely; the decided direction is a modular monolith.
+- Do not present mock, simulated, or demonstration data as real data.
+- Do not provide legal or safety certainty without current, verified official sources.
+- Do not publish sensitive coordinates or make an exact location public by default.
+- Keep specifications and implemented behavior synchronized.
+- Run the available validations before declaring a task complete.
 
-## Documentación y decisiones
+## Documentation and decisions
 
-- Actualizar la documentación afectada después de cambios relevantes.
-- Actualizar [docs/changelog.md](docs/changelog.md) con cambios significativos.
-- Crear un ADR cuando una decisión arquitectónica sea significativa.
-- Registrar fuentes, fecha de consulta, licencia, atribución y limitaciones cuando se incorporen datos externos.
+- Update affected documentation after significant changes.
+- Update [docs/changelog.md](docs/changelog.md) with significant changes.
+- Create an ADR when an architectural decision is significant.
+- Record sources, consultation date, license, attribution, and limitations when incorporating external data.
 
-## Commits atómicos obligatorios
+## Mandatory atomic commits
 
-- Cada commit debe representar una sola unidad lógica y reversible.
-- Todo trabajo modificador completado debe quedar validado y confirmado antes de comenzar una nueva unidad solicitada.
-- Separar los cambios de documentación, infraestructura, pruebas y aplicación cuando representen intenciones distintas.
-- Revisar siempre `git diff` y `git diff --staged` antes de confirmar.
-- Añadir archivos mediante rutas explícitas. No utilizar `git add .`, `git add -A` ni equivalentes indiscriminados.
-- No mezclar cambios ajenos o no relacionados.
-- No crear commits vacíos para tareas exclusivamente de análisis.
-- No modificar commits publicados ni utilizar `--amend`, rebase destructivo, force push o comandos destructivos sin autorización explícita.
-- No incluir secretos, credenciales, archivos locales de Obsidian ni artefactos generados innecesarios.
-- Ejecutar las validaciones relevantes antes del commit.
-- Usar mensajes que sigan Conventional Commits y describan la intención real del cambio.
-- Después del commit, ejecutar `git status --short`.
-- Si queda cualquier cambio pendiente, explicarlo expresamente antes de continuar.
+- Each commit must represent one logical, reversible unit.
+- All completed modifying work must be validated and committed before starting a new requested unit.
+- Separate documentation, infrastructure, test, and application changes when they represent different intentions.
+- Always review `git diff` and `git diff --staged` before committing.
+- Add files using explicit paths. Do not use `git add .`, `git add -A`, or indiscriminate equivalents.
+- Do not mix unrelated changes or changes belonging to someone else.
+- Do not create empty commits for analysis-only tasks.
+- Do not modify published commits or use `--amend`, destructive rebase, force push, or destructive commands without explicit authorization.
+- Do not include secrets, credentials, local Obsidian files, or unnecessary generated artifacts.
+- Run the relevant validations before committing.
+- Use Conventional Commit messages that describe the real intent of the change.
+- After committing, run `git status --short`.
+- If any pending changes remain, explain them explicitly before continuing.
 
-## Operaciones externas
+## External operations
 
-- No hacer commits, pushes ni despliegues salvo petición explícita.
-- No sustituir referencias oficiales o externas por afirmaciones propias no verificadas.
+- Do not commit, push, or deploy unless explicitly requested.
+- Do not replace official or external references with unverified claims of your own.

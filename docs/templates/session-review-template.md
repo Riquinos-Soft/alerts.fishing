@@ -1,43 +1,42 @@
-# Revisión de sesión
+# Session review
 
-No incluir coordenadas sensibles en una nota destinada a compartirse.
+Do not include sensitive coordinates in a note intended for sharing.
 
-## Contexto
+## Context
 
-- **Fecha y franja:**
-- **Spot:** nombre o referencia privada/aproximada según visibilidad.
-- **Especie objetivo:** lubina europea | otra.
-- **Técnica:** spinning desde costa | otra.
-- **Recomendación vinculada:**
-- **Versión de scoring:**
+- **Date and time window:**
+- **Spot:** name or private/approximate reference according to visibility.
+- **Target species:** European seabass | other.
+- **Technique:** shore spinning | other.
+- **Linked recommendation:**
+- **Scoring version:**
 
-## Decisión previa
+## Prior decision
 
-- **Score mostrado:**
-- **Confianza mostrada:**
-- **Estado de seguridad:**
-- **Factores principales:**
-- **¿La decisión fue útil?:** sí | parcialmente | no.
+- **Score displayed:**
+- **Confidence displayed:**
+- **Safety status:**
+- **Main factors:**
+- **Was the decision useful?:** yes | partially | no.
 
-## Sesión
+## Session
 
-- **Duración y esfuerzo:**
-- **Equipo o señuelos relevantes:**
-- **Condiciones observadas:** distinguir observación de estimación.
-- **Capturas:** número y notas permitidas.
-- **¿Fue un bolo?:** sí | no.
+- **Duration and effort:**
+- **Relevant gear or lures:**
+- **Observed conditions:** distinguish observation from estimate.
+- **Catches:** number and permitted notes.
+- **Was it a blank session?:** yes | no.
 
-## Evaluación
+## Evaluation
 
-- ¿Qué explicó bien la recomendación?
-- ¿Qué fue incorrecto, incompleto o confuso?
-- ¿Hubo diferencias entre condiciones previstas y observadas?
-- ¿Apareció algún riesgo no contemplado?
-- ¿Qué debería revisarse en datos, scoring o explicación?
+- What did the recommendation explain well?
+- What was incorrect, incomplete, or confusing?
+- Were there differences between forecast and observed conditions?
+- Did any unanticipated risk arise?
+- What should be reviewed in the data, scoring, or explanation?
 
-## Privacidad y fuentes
+## Privacy and sources
 
-- **Visibilidad elegida:** solo usuario | contacto de seguridad | círculo | comunidad aproximada.
-- **Información sensible eliminada antes de compartir:** sí | no aplica.
-- **Fuentes adicionales:**
-
+- **Selected visibility:** user only | safety contact | circle | approximate community.
+- **Sensitive information removed before sharing:** yes | not applicable.
+- **Additional sources:**

@@ -1,68 +1,67 @@
-# Roadmap por resultados
+# Outcome-based roadmap
 
-El roadmap expresa resultados verificables, no fechas prometidas. Ninguna fase se considera implementada en el estado actual salvo la base documental.
+The roadmap expresses verifiable outcomes, not promised dates. No phase is considered implemented in the current state except the documentation foundation.
 
-## 1. Documentación y decisiones
+## 1. Documentation and decisions
 
-**Estado: `decided` — en preparación.**
+**Status: `decided` — in preparation.**
 
-Resultado: existe una fuente de verdad navegable con visión, límites, arquitectura prevista, ADR, investigación, backlog y especificación inicial coherentes.
+Outcome: a navigable source of truth exists with coherent vision, boundaries, planned architecture, ADRs, research, backlog, and initial specification.
 
-Criterio de salida: enlaces y estados revisados; preguntas abiertas visibles; siguiente vertical definido.
+Exit criterion: links and states reviewed; open questions visible; next vertical slice defined.
 
-## 2. Vertical slice con datos mock
+## 2. Vertical slice with mock data
 
-**Estado: `proposed` — siguiente hito.**
+**Status: `proposed` — next milestone.**
 
-Resultado: una persona recorre una oportunidad mock para uno de tres spots dentro de 72 horas, entiende score, confianza y seguridad, y registra una sesión o bolo.
+Outcome: a person follows a mock opportunity for one of three spots within 72 hours, understands score, confidence, and safety, and records a session or blank session.
 
-Criterio de salida: cumple la [especificación 001](../specs/001-fishing-opportunity-mvp.md) y ningún dato mock parece real.
+Exit criterion: it meets [specification 001](../specs/001-fishing-opportunity-mvp.md), and no mock data appears real.
 
-## 3. Proveedores reales
+## 3. Real providers
 
-**Estado: `future`; selección `needs-validation`.**
+**Status: `future`; selection `needs-validation`.**
 
-Resultado: condiciones con fuente, licencia, atribución, frescura, completitud y cobertura validadas para Rías Baixas.
+Outcome: conditions with validated source, license, attribution, freshness, completeness, and coverage for Rías Baixas.
 
-## 4. Alertas y feedback
+## 4. Alerts and feedback
 
-**Estado: `future`.**
+**Status: `future`.**
 
-Resultado: las alertas pueden convertirse en sesiones y el feedback permite evaluar utilidad y explicación.
+Outcome: alerts can lead to sessions, and feedback enables evaluation of usefulness and explanation.
 
-## 5. Equipo y tutoriales
+## 5. Gear and tutorials
 
-**Estado: `future`.**
+**Status: `future`.**
 
-Resultado: recomendaciones contextualizadas por equipo y tutoriales mediante enlaces o reproductores oficiales revisados.
+Outcome: gear-aware recommendations and tutorials through reviewed official links or players.
 
-## 6. Normativa
+## 6. Regulations
 
-**Estado: `future`; fuentes y reglas `needs-validation`.**
+**Status: `future`; sources and rules `needs-validation`.**
 
-Resultado: información trazable hacia fuentes oficiales vigentes, sin aparentar certeza cuando falten datos.
+Outcome: information traceable to current official sources, without an appearance of certainty when data is missing.
 
-## 7. Comunidad
+## 7. Community
 
-**Estado: `future`.**
+**Status: `future`.**
 
-Resultado: aprendizaje compartido con ubicaciones retrasadas y aproximadas, y protección de spots sensibles.
+Outcome: shared learning with delayed, approximate locations and protection of sensitive spots.
 
-## 8. Ubicación temporal
+## 8. Temporary location
 
-**Estado: `future`.**
+**Status: `future`.**
 
-Resultado: compartir ubicación exacta temporalmente con un contacto de seguridad bajo consentimiento y caducidad.
+Outcome: temporarily share an exact location with a safety contact subject to consent and expiration.
 
-## 9. Agentes especializados
+## 9. Specialized agents
 
-**Estado: `future`; viabilidad `needs-validation`.**
+**Status: `future`; feasibility `needs-validation`.**
 
-Resultado: agentes limitados y evaluables coordinan o explican servicios verificables sin ser autoridad única.
+Outcome: constrained, evaluable agents coordinate or explain verifiable services without being the sole authority.
 
 ## 10. iOS
 
-**Estado: `future`.**
+**Status: `future`.**
 
-Resultado: aplicación iOS justificada por aprendizaje y necesidades que el producto web validado no cubra.
-
+Outcome: an iOS application justified by learning and needs that the validated web product does not cover.

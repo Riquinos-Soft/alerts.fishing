@@ -1,33 +1,32 @@
 # Backlog
 
-Este backlog recoge resultados y preguntas, no compromisos temporales.
+This backlog records outcomes and questions, not time commitments.
 
-## Siguiente: preparar el vertical slice inicial
+## Next: prepare the initial vertical slice
 
-- `proposed`: convertir la especificación 001 en un flujo pequeño de trabajo.
-- `needs-validation`: definir ejemplos mock claramente etiquetados para tres spots.
-- `needs-validation`: acordar el conjunto mínimo de factores explicables.
-- `needs-validation`: definir niveles de confianza de demostración.
-- `needs-validation`: definir estados mock de seguridad, incluida una ventana invalidada.
-- `proposed`: capturar una sesión con cero o más capturas y feedback de utilidad.
-- `proposed`: verificar el recorrido completo con criterios de aceptación.
+- `proposed`: turn specification 001 into a small workflow.
+- `needs-validation`: define clearly labeled mock examples for three spots.
+- `needs-validation`: agree on the minimum set of explainable factors.
+- `needs-validation`: define demonstration confidence levels.
+- `needs-validation`: define mock safety states, including an invalidated window.
+- `proposed`: capture a session with zero or more catches and usefulness feedback.
+- `proposed`: verify the complete journey against the acceptance criteria.
 
-## Después del vertical
+## After the vertical slice
 
-- `needs-validation`: evaluar proveedores reales, licencias, cobertura y frescura.
-- `future`: conectar alertas con sesiones.
-- `future`: historiales y evaluación por versión de scoring.
-- `future`: equipo y contenido tutorial oficial.
-- `future`: normativa trazable a fuentes oficiales.
-- `future`: círculos de confianza y comunidad con privacidad.
-- `future`: ubicación temporal para contacto de seguridad.
-- `future`: agentes especializados.
-- `future`: aplicación iOS tras validar el producto web.
+- `needs-validation`: evaluate real providers, licenses, coverage, and freshness.
+- `future`: connect alerts to sessions.
+- `future`: histories and evaluation by scoring version.
+- `future`: gear and official tutorial content.
+- `future`: regulations traceable to official sources.
+- `future`: trusted circles and a privacy-preserving community.
+- `future`: temporary location for a safety contact.
+- `future`: specialized agents.
+- `future`: iOS application after validating the web product.
 
-## Investigación continua
+## Ongoing research
 
-- `needs-validation`: límites, accesos, riesgos y sensibilidad de Aguete, Praia do Santo (Seixo) y Placeres/Lourizán.
-- `needs-validation`: factores respaldados para lubina europea y spinning desde costa en Rías Baixas.
-- `needs-validation`: método para medir utilidad y precisión con suficiente información.
-- `needs-validation`: requisitos de privacidad, seguridad y normativa aplicables.
-
+- `needs-validation`: boundaries, access, risks, and sensitivity of Aguete, Praia do Santo (Seixo), and Placeres/Lourizán.
+- `needs-validation`: supported factors for European seabass and shore spinning in Rías Baixas.
+- `needs-validation`: method for measuring usefulness and accuracy with sufficient information.
+- `needs-validation`: applicable privacy, safety, and regulatory requirements.

@@ -1,107 +1,107 @@
-# ADR-0004: API independiente de los clientes
+# ADR-0004: client-independent API
 
-- **Estado:** `proposed`; pendiente de revisión humana.
-- **Fecha:** 2026-09-04.
-- **Implementación:** no iniciada.
-- **Decisiones relacionadas:** [ADR-0002: monolito modular](ADR-0002-modular-monolith.md) y [ADR-0003: aplicación web primero](ADR-0003-web-first.md), ambas `decided` como dirección y no implementadas.
+- **Status:** `proposed`; pending human review.
+- **Date:** 2026-09-04.
+- **Implementation:** not started.
+- **Related decisions:** [ADR-0002: modular monolith](ADR-0002-modular-monolith.md) and [ADR-0003: web application first](ADR-0003-web-first.md), both `decided` as directions and not implemented.
 
-## Contexto
+## Context
 
-La aplicación web es la primera dirección aceptada, pero el producto puede necesitar después una web pública, una aplicación Nuxt, clientes iOS y Android y automatizaciones internas. Si el primer backend refleja componentes de Nuxt, una plataforma móvil o el nombre comercial, cada cliente futuro heredará ese acoplamiento o duplicará reglas de pesca, autorización y privacidad.
+The web application is the first accepted direction, but the product may later need a public website, a Nuxt application, iOS and Android clients, and internal automations. If the first backend reflects Nuxt components, a mobile platform, or the commercial name, every future client will inherit that coupling or duplicate fishing, authorization, and privacy rules.
 
-También hace falta una frontera verificable para tiempo, unidades, errores, paginación, compatibilidad, imágenes, identidad, caché, notificaciones y ubicación. Esa frontera no debe convertir los módulos internos en servicios distribuidos ni ampliar el MVP, que todavía excluye autenticación y aplicaciones nativas.
+A verifiable boundary is also needed for time, units, errors, pagination, compatibility, images, identity, caching, notifications, and location. That boundary must not turn internal modules into distributed services or expand the MVP, which still excludes authentication and native applications.
 
-La [arquitectura API multi-cliente](../architecture/multi-client-api.md) contiene el problema, los requisitos, criterios de aceptación, plan, pruebas derivadas, riesgos y fuentes de esta propuesta.
+The [multi-client API architecture](../architecture/multi-client-api.md) contains the problem, requirements, acceptance criteria, plan, derived tests, risks, and sources for this proposal.
 
-## Decisión propuesta
+## Proposed decision
 
-Adoptar, sujeto a revisión, una API HTTP JSON agnóstica de clientes como adaptador de entrada del monolito modular:
+Subject to review, adopt a client-agnostic HTTP JSON API as the input adapter for the modular monolith:
 
-- dominio y aplicación permanecerían independientes de HTTP, OpenAPI, frameworks, plataformas, proveedores y marca comercial;
-- la API traduciría un contrato OpenAPI previo a comandos, consultas y resultados de aplicación;
-- infraestructura implementaría puertos para persistencia y proveedores, sin decidir visibilidad ni reglas de dominio;
-- web pública, Nuxt, iOS, Android y automatizaciones consumirían capacidades comunes con permisos propios, no variantes de dominio por cliente;
-- la versión mayor se expresaría en la ruta base, mientras la evolución compatible permanecería dentro de esa versión;
-- errores, UTC y zonas IANA, unidades, cursores, filtros, idempotencia, caché y observabilidad seguirían las convenciones de la especificación asociada;
-- imágenes, autenticación OAuth/OIDC con PKCE y notificaciones serían capacidades futuras sujetas a especificaciones separadas;
-- ubicación precisa se filtraría en aplicación antes de serializar y nunca se delegaría su ocultación al cliente.
+- the domain and application would remain independent of HTTP, OpenAPI, frameworks, platforms, providers, and commercial branding;
+- the API would translate a prior OpenAPI contract into application commands, queries, and results;
+- infrastructure would implement ports for persistence and providers without deciding visibility or domain rules;
+- public web, Nuxt, iOS, Android, and automations would consume shared capabilities with their own permissions, not per-client domain variants;
+- the major version would appear in the base path, while compatible evolution would remain within that version;
+- errors, UTC and IANA zones, units, cursors, filters, idempotency, caching, and observability would follow the conventions in the associated specification;
+- images, OAuth/OIDC authentication with PKCE, and notifications would be future capabilities subject to separate specifications;
+- precise location would be filtered in the application before serialization, and hiding it would never be delegated to the client.
 
-Esta propuesta no define endpoints, no selecciona proveedores y no crea microservicios.
+This proposal does not define endpoints, select providers, or create microservices.
 
-## Consecuencias
+## Consequences
 
-### Beneficios esperados
+### Expected benefits
 
-- Un mismo caso de uso podría exponerse a varios clientes sin trasladar reglas a sus interfaces.
-- OpenAPI permitiría revisar contratos, detectar rupturas y generar clientes tipados en el futuro.
-- Las políticas transversales tendrían una referencia única y verificable.
-- Los límites del monolito modular seguirían siendo visibles sin coste de distribución.
-- La privacidad no dependería de que cada cliente oculte correctamente datos ya recibidos.
+- The same use case could be exposed to several clients without moving rules into their interfaces.
+- OpenAPI would enable contract reviews, breaking-change detection, and future generation of typed clients.
+- Cross-cutting policies would have a single, verifiable reference.
+- Modular-monolith boundaries would remain visible without distribution costs.
+- Privacy would not depend on every client correctly hiding data it had already received.
 
-### Costes y restricciones
+### Costs and constraints
 
-- Cada cambio de comportamiento requeriría especificación, actualización de contrato, pruebas de compatibilidad y sincronización documental.
-- Los DTO necesitarían mapeo explícito en vez de reutilizar entidades internas.
-- Mantener versiones coexistentes y clientes móviles antiguos tendría coste operativo.
-- OpenAPI y los generadores podrían discrepar en `nullable`, enums, fechas o binarios y exigir pruebas por lenguaje.
-- Subidas, identidad, push y datos geográficos requerirían modelado de amenazas y decisiones legales antes de implementarse.
+- Every behavior change would require a specification, contract update, compatibility tests, and documentation synchronization.
+- DTOs would require explicit mapping instead of reusing internal entities.
+- Maintaining coexisting versions and old mobile clients would have an operational cost.
+- OpenAPI and generators could disagree about `nullable`, enums, dates, or binary data and require tests per language.
+- Uploads, identity, push, and geographic data would require threat modeling and legal decisions before implementation.
 
-## Alternativas consideradas
+## Alternatives considered
 
-### Backend específico para Nuxt
+### Nuxt-specific backend
 
-No se propone porque convertiría la primera interfaz en límite de negocio y dificultaría clientes nativos o automatizados. Un backend-for-frontend futuro para sesión web podría existir como adaptador, pero no sería el dueño de las reglas de pesca.
+Not proposed because it would turn the first interface into a business boundary and make native or automated clients harder. A future backend-for-frontend for web sessions could exist as an adapter, but would not own the fishing rules.
 
-### Contratos separados por cliente
+### Separate contracts per client
 
-No se propone como punto de partida porque multiplicaría semántica, autorización y compatibilidad. Podrían justificarse proyecciones o adaptadores específicos, siempre sobre los mismos casos de uso y políticas.
+Not proposed as a starting point because it would multiply semantics, authorization, and compatibility. Specific projections or adapters could be justified, provided they sit on top of the same use cases and policies.
 
-### Compartir entidades internas directamente
+### Sharing internal entities directly
 
-No se propone porque acoplaría persistencia y dominio a la representación pública, ampliaría la superficie de datos y haría insegura la evolución.
+Not proposed because it would couple persistence and domain to the public representation, increase the data surface, and make evolution unsafe.
 
-### GraphQL desde el inicio
+### GraphQL from the outset
 
-No se propone: el problema actual no demuestra necesidad de selección arbitraria o federación, y añadiría decisiones de autorización por campo, caché, coste de consultas y tooling antes del primer vertical.
+Not proposed: the current problem does not demonstrate a need for arbitrary selection or federation, and it would add field-level authorization, caching, query-cost, and tooling decisions before the first vertical slice.
 
-### Microservicios por módulo
+### Microservices by module
 
-Se descarta porque contradice [ADR-0002](ADR-0002-modular-monolith.md) y añade distribución prematura sin evidencia de escala u organización.
+Rejected because it contradicts [ADR-0002](ADR-0002-modular-monolith.md) and adds premature distribution without evidence of scale or organizational need.
 
-## Riesgos
+## Risks
 
-- El contrato puede acoplarse al primer cliente aunque sus nombres parezcan genéricos.
-- Una evolución aparentemente aditiva puede romper generadores o clientes con enums cerrados.
-- Caché, telemetría, imágenes y notificaciones pueden revelar ubicación fuera de la respuesta principal.
-- Una API uniforme puede ocultar autorización insuficiente por objeto o campo.
-- Borradores técnicos de idempotencia y rate limit pueden cambiar antes de la implementación.
-- Las versiones móviles pueden obligar a mantener contratos antiguos más tiempo del previsto.
+- The contract may couple to the first client even if its names appear generic.
+- Apparently additive evolution may break generators or clients with closed enums.
+- Caches, telemetry, images, and notifications may reveal location outside the main response.
+- A uniform API may conceal insufficient object- or field-level authorization.
+- Technical drafts for idempotency and rate limiting may change before implementation.
+- Mobile versions may require old contracts to be maintained longer than planned.
 
-## Supuestos y puntos pendientes
+## Assumptions and pending points
 
-- `proposed`: HTTP JSON y OpenAPI cubren el primer borde de aplicación.
-- `proposed`: versionar la ruta por versión mayor es comprensible para todos los clientes previstos.
-- `needs-validation`: versión exacta de OpenAPI y compatibilidad con FastAPI y generadores TypeScript, Swift y Kotlin.
-- `needs-validation`: ventana de deprecación, SLO, cuotas, retención y política de soporte.
-- `needs-validation`: arquitectura de sesión web, proveedor de identidad y modelo de permisos.
-- `needs-validation`: controles, proveedor y coste de imágenes y notificaciones.
-- `needs-validation`: obligaciones legales concretas para cuentas, ubicación, tokens, consentimiento y borrado.
+- `proposed`: HTTP JSON and OpenAPI cover the first application boundary.
+- `proposed`: path-based major versioning is understandable for all planned clients.
+- `needs-validation`: exact OpenAPI version and compatibility with FastAPI and TypeScript, Swift, and Kotlin generators.
+- `needs-validation`: deprecation window, SLO, quotas, retention, and support policy.
+- `needs-validation`: web-session architecture, identity provider, and permissions model.
+- `needs-validation`: controls, provider, and cost for images and notifications.
+- `needs-validation`: specific legal obligations for accounts, location, tokens, consent, and deletion.
 
-## Validación requerida
+## Required validation
 
-Antes de cambiar el estado del ADR:
+Before changing the ADR status:
 
-1. Revisar los criterios AC-01 a AC-15 de la [especificación arquitectónica](../architecture/multi-client-api.md).
-2. Probar un contrato OpenAPI mínimo de lectura y escritura contra el cliente web previsto.
-3. Ejecutar lint, pruebas de contrato, análisis de ruptura y fixtures de privacidad sin afirmar que ello implementa el producto.
-4. Hacer una prueba de generación y compilación únicamente para los lenguajes cuya adopción se esté evaluando.
-5. Revisar amenazas de autorización, ubicación, caché, archivos, notificaciones y telemetría.
-6. Reconsultar las fuentes normativas y los borradores IETF en la fecha de implementación.
-7. Obtener aceptación humana explícita; hasta entonces este ADR permanece `proposed`.
+1. Review criteria AC-01 through AC-15 in the [architecture specification](../architecture/multi-client-api.md).
+2. Test a minimal read-and-write OpenAPI contract against the planned web client.
+3. Run linting, contract tests, breaking-change analysis, and privacy fixtures without claiming that this implements the product.
+4. Run a generation and compilation test only for languages whose adoption is being evaluated.
+5. Review authorization, location, cache, file, notification, and telemetry threats.
+6. Revisit regulatory sources and IETF drafts on the implementation date.
+7. Obtain explicit human acceptance; until then, this ADR remains `proposed`.
 
-## Fuentes
+## Sources
 
-Fuentes oficiales y primarias consultadas el 2026-09-04; la lista razonada completa figura en la [arquitectura asociada](../architecture/multi-client-api.md#fuentes-consultadas):
+Official and primary sources consulted on 2026-09-04; the full annotated list appears in the [associated architecture](../architecture/multi-client-api.md#sources-consulted):
 
 - [OpenAPI Specification](https://spec.openapis.org/oas/).
 - [RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html).
@@ -111,6 +111,6 @@ Fuentes oficiales y primarias consultadas el 2026-09-04; la lista razonada compl
 - [W3C Trace Context](https://www.w3.org/TR/trace-context/).
 - [Reglamento (UE) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
-## Estado de adopción
+## Adoption status
 
-No aceptado y no implementado. Este ADR no modifica el alcance actual ni autoriza construir endpoints, autenticación, clientes nativos, subidas o notificaciones.
+Not accepted and not implemented. This ADR does not change the current scope or authorize building endpoints, authentication, native clients, uploads, or notifications.
