@@ -30,8 +30,8 @@ The slice includes no real API, authentication, database, durable browser persis
 
 The application will live under `apps/web/`. The following exact versions are approved for the initial scaffold, but are not installed by this decision:
 
-- Node.js `24.19.0` — toolchain runtime, not an application package;
-- npm `11.17.0` — toolchain package manager, not an application package;
+- Node.js `24.19.0` — compatibility runtime for Nuxt and tooling, not an application package;
+- Bun `1.4.1` — MIT-licensed toolchain package manager, not an application package;
 - Nuxt `4.5.2` — MIT;
 - Vue `3.5.42` — MIT;
 - TypeScript `7.0.2` — Apache-2.0;
@@ -44,6 +44,10 @@ The application will live under `apps/web/`. The following exact versions are ap
 Nuxt UI is selected for the spike because it provides direct Nuxt, SSR, TypeScript, and color-mode integration; broad component coverage for rapid delivery of this small vertical slice; a Reka UI accessibility foundation; semantic tokens and typed variants; an MIT license; and a built-in `DashboardSidebar` ecosystem suitable for testing the proposed navigation. These foundations do not certify the resulting product's accessibility, and Nuxt UI's default styling must not become the product identity.
 
 No package is added or installed by this ADR. License metadata and the selected version matrix must be checked in the generated dependency artifacts during scaffolding, without silently changing the approved versions.
+
+Ordinary package scripts in the future scaffold must use `bun run`. The explicit Bun-runtime opt-in form `bun --bun` is not approved by this decision; Node.js `24.19.0` remains the compatibility runtime for Nuxt and tooling. Neither the Node.js runtime nor the Bun runtime has been exercised in this repository.
+
+The future scaffold must commit Bun's text lockfile, `bun.lock`, and reproducible CI installs must use `bun install --frozen-lockfile` or its equivalent `bun ci` command. Official sources consulted on 2026-09-05 are the [Bun 1.4.1 release, published 2026-09-04](https://github.com/oven-sh/bun/releases/tag/bun-v1.4.1), [Nuxt 4 installation guide](https://nuxt.com/docs/4.x/getting-started/installation), [Bun install documentation](https://bun.sh/docs/pm/cli/install), and [Bun license](https://github.com/oven-sh/bun/blob/main/LICENSE.md). They establish the selected release, documented command and lockfile behavior, and Bun's own MIT license; the license source records separately licensed linked components, and none of these sources establishes compatibility or runtime behavior in this repository.
 
 ## D3 — authorized reversible visual spike
 

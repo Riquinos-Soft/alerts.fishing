@@ -167,9 +167,13 @@ The D1 and D2 gates are satisfied for the initial scaffold. D3 permits only the 
 
 ### D2 version and license record
 
-- **Toolchain:** Node.js `24.19.0` and npm `11.17.0`; these are toolchain versions, not application packages.
+- **Toolchain:** Node.js `24.19.0` is the compatibility runtime for Nuxt and tooling, and Bun `1.4.1` is the MIT-licensed package manager; both are toolchain components, not application packages.
 - **MIT application packages:** Nuxt `4.5.2`, Vue `3.5.42`, Nuxt UI `4.11.0`, Vitest `4.1.11`, `@nuxt/test-utils` `4.2.0`, and `@vue/test-utils` `2.5.0`.
 - **Apache-2.0 application packages:** TypeScript `7.0.2` and `@playwright/test` `1.63.0`.
+
+Ordinary package scripts in the future scaffold must use `bun run`. The explicit Bun-runtime opt-in form `bun --bun` is not approved by D2; Node.js remains the compatibility runtime. Neither the Node.js runtime nor the Bun runtime has been exercised in this repository, so compatibility remains pending validation.
+
+The future scaffold must commit `bun.lock` and use `bun install --frozen-lockfile` or the equivalent `bun ci` command for reproducible CI installs. The official release, command, lockfile, license, consultation-date, and source limitations are recorded in [ADR-0005](../decisions/ADR-0005-initial-vertical-slice-delivery.md#d2--initial-scaffold-stack).
 
 Nuxt UI is selected for the spike because it directly integrates with Nuxt, SSR, TypeScript, and color mode; covers the small vertical's common components; builds on Reka UI's accessibility foundation; supports semantic tokens and typed variants; is MIT-licensed; and includes a `DashboardSidebar` ecosystem for the proposed navigation test. Its default styling is not the product identity, and its foundation does not replace product-level accessibility validation.
 
@@ -303,9 +307,9 @@ Each increment is intended to be one small, reversible PR. Documentation, applic
 ### Increment 1 — create the approved minimal shell
 
 - **Intent:** infrastructure/scaffolding only, after D2.
-- **Conceptually owned areas:** `apps/web/` package manifest and lockfile, framework configuration, minimal application shell, and tool configuration.
+- **Conceptually owned areas:** `apps/web/` package manifest and committed `bun.lock`, framework configuration, minimal application shell, and tool configuration.
 - **Dependencies:** the decided D1 and D2 boundaries in ADR-0005, including recorded versions/licenses and justified dependencies.
-- **Validations:** framework-provided install/build/type-check/lint categories discovered from the approved manifest; clean dependency/license review. Commands must be recorded only after scripts exist.
+- **Validations:** reproducible install with `bun install --frozen-lockfile` or `bun ci`; framework-provided build/type-check/lint categories discovered from the approved manifest; clean dependency/license review. Application commands must be recorded only after scripts exist.
 - **Completion condition:** a minimal web shell runs without fishing behavior, mock scenarios, or claims that Spec 001 is implemented.
 
 ### Increment 2 — add deterministic mock domain/catalog behavior
