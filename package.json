@@ -1,0 +1,19 @@
+{
+  "name": "alerts-fishing-documentation",
+  "private": true,
+  "packageManager": "bun@1.4.1",
+  "engines": {
+    "node": "24.19.0"
+  },
+  "scripts": {
+    "lint:docs": "markdownlint-cli2",
+    "test:docs-links": "node --test scripts/check-markdown-links.test.mjs",
+    "check:docs-links": "node scripts/check-markdown-links.mjs",
+    "validate": "bun run lint:docs && bun run test:docs-links && bun run check:docs-links"
+  },
+  "devDependencies": {
+    "github-slugger": "2.0.0",
+    "markdown-it": "15.0.1",
+    "markdownlint-cli2": "0.23.2"
+  }
+}

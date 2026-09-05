@@ -1,0 +1,21 @@
+{
+  "globs": [
+    "README.md",
+    "AGENTS.md",
+    "docs/**/*.md"
+  ],
+  "config": {
+    "default": true,
+    // Existing documentation intentionally uses long prose, criteria, and source lines.
+    "MD013": false,
+    // README.md uses these elements only to center and size the provisional logo.
+    "MD033": {
+      "allowed_elements": [
+        "div",
+        "em",
+        "img",
+        "p"
+      ]
+    }
+  }
+}
