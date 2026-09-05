@@ -1,50 +1,49 @@
-# Mapa de funcionalidades
+# Feature map
 
-Los estados de fase son `MVP`, `next`, `later` y `research`; no implican implementación actual.
+Phase states are `MVP`, `next`, `later`, and `research`; they do not imply current implementation.
 
 ## 1. Decide
 
-- `MVP`: oportunidades mock para tres spots, lubina, spinning desde costa y 72 horas.
-- `MVP`: score explicable, confianza separada y factores favorables/desfavorables.
-- `next`: proveedores ambientales reales tras validar licencia, cobertura y calidad.
-- `later`: preferencias personales y equipo disponible.
-- `research`: evaluación histórica y calibración de recomendaciones.
+- `MVP`: mock opportunities for three spots, European seabass, shore spinning, and 72 hours.
+- `MVP`: explainable score, separate confidence, and favorable/unfavorable factors.
+- `next`: real environmental providers after validating license, coverage, and quality.
+- `later`: personal preferences and available gear.
+- `research`: historical evaluation and calibration of recommendations.
 
-## 2. Pesca
+## 2. Fish
 
-- `MVP`: detalle de ventana, técnica sugerida y advertencias con contenido de demostración.
-- `next`: alertas que puedan terminar en una sesión.
-- `later`: equipo y tutoriales mediante enlaces o reproductores oficiales.
-- `research`: presentación útil en movilidad y condiciones adversas.
+- `MVP`: window details, suggested technique, and warnings with demonstration content.
+- `next`: alerts that can lead to a session.
+- `later`: gear and tutorials through official links or players.
+- `research`: useful presentation on mobile devices and in adverse conditions.
 
-## 3. Aprende
+## 3. Learn
 
-- `MVP`: registro de sesiones, capturas y bolos.
-- `MVP`: feedback sobre utilidad de recomendación y explicación.
-- `next`: comparación entre recomendación y resultado.
-- `later`: historial personal y patrones.
-- `research`: precisión histórica cuando exista volumen suficiente.
+- `MVP`: record sessions, catches, and blank sessions.
+- `MVP`: feedback on the usefulness of the recommendation and explanation.
+- `next`: comparison between recommendation and outcome.
+- `later`: personal history and patterns.
+- `research`: historical accuracy once sufficient volume exists.
 
-## 4. Comparte
+## 4. Share
 
-- `later`: círculos de confianza y visibilidad elegida.
-- `later`: comunidad con ubicaciones retrasadas y aproximadas.
-- `research`: mecanismos contra exposición de spots sensibles.
+- `later`: trusted circles and user-selected visibility.
+- `later`: community with delayed, approximate locations.
+- `research`: mechanisms to prevent exposure of sensitive spots.
 
-## 5. Seguridad y normativa
+## 5. Safety and regulations
 
-- `MVP`: puerta de seguridad separada que puede invalidar una ventana mock.
-- `next`: fuentes oficiales de seguridad y normativa con vigencia visible.
-- `later`: contacto de seguridad y ubicación exacta temporal con consentimiento.
-- `research`: actualización, jurisdicción y trazabilidad de reglas.
+- `MVP`: separate safety gate that can invalidate a mock window.
+- `next`: official safety and regulatory sources with visible currency.
+- `later`: safety contact and temporary exact location with consent.
+- `research`: updating, jurisdiction, and rule traceability.
 
-## 6. Agentes especializados
+## 6. Specialized agents
 
-- `research`: orquestación y agentes de datos, spot, especie/técnica, normativa, seguridad, comunidad, crítica y evaluación.
-- `later`: incorporación solo tras validar producto y límites de autoridad.
+- `research`: orchestration and data, spot, species/technique, regulations, safety, community, critic, and evaluation agents.
+- `later`: adoption only after validating the product and authority boundaries.
 
 ## 7. iOS
 
-- `research`: necesidades nativas que una PWA validada no cubra.
-- `later`: aplicación iOS posterior a la validación del producto web.
-
+- `research`: native needs that a validated PWA does not cover.
+- `later`: iOS application after validation of the web product.

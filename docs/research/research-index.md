@@ -1,27 +1,26 @@
-# Índice de investigación
+# Research index
 
-**Estado: investigación inicial; ninguna fuente está integrada técnicamente.**
+**Status: initial research; no source is technically integrated.**
 
-## Áreas
+## Areas
 
-- [Proveedores y referencias de datos](data-providers.md)
-- [Ciencia pesquera](fishing-science.md)
-- [Normativa](regulations.md)
-- [Contenido tutorial](tutorial-content.md)
+- [Providers and data references](data-providers.md)
+- [Fishing science](fishing-science.md)
+- [Regulations](regulations.md)
+- [Tutorial content](tutorial-content.md)
 
-## Reglas de evidencia
+## Evidence rules
 
-- Registrar URL, fecha de consulta, finalidad, alcance y limitaciones.
-- Verificar licencia, atribución, condiciones de uso y posibilidad de redistribución antes de utilizar datos.
-- Distinguir fuente oficial, evidencia científica, referencia de producto y contenido comunitario.
-- No convertir correlaciones o experiencia anecdótica en causalidad.
-- No presentar información no verificada como hecho ni ocultar discrepancias entre fuentes.
-- PescaREC y las fuentes oficiales son referencias externas; `alerts.fishing` no las sustituye.
+- Record URL, consultation date, purpose, scope, and limitations.
+- Verify license, attribution, terms of use, and redistribution rights before using data.
+- Distinguish official sources, scientific evidence, product references, and community content.
+- Do not turn correlations or anecdotal experience into causality.
+- Do not present unverified information as fact or conceal discrepancies between sources.
+- PescaREC and official sources are external references; `alerts.fishing` does not replace them.
 
-## Prioridades abiertas
+## Open priorities
 
-- `needs-validation`: calidad y cobertura para Rías Baixas de observaciones y predicciones marítimas.
-- `needs-validation`: fuentes adecuadas para seguridad y vigencia normativa.
-- `needs-validation`: evidencia sobre factores que influyen en lubina europea mediante spinning desde costa.
-- `needs-validation`: licencias, atribución, límites de uso y estabilidad de acceso de cada fuente.
-
+- `needs-validation`: quality and coverage of marine observations and forecasts for Rías Baixas.
+- `needs-validation`: suitable sources for safety and current regulations.
+- `needs-validation`: evidence about factors that influence European seabass when shore spinning.
+- `needs-validation`: licenses, attribution, usage limits, and access stability for each source.

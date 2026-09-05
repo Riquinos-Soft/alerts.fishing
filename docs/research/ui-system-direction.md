@@ -1,342 +1,342 @@
-# Investigación: dirección moderna de UI píxel-futurista
+# Research: modern pixel-futurist UI direction
 
-**Estado: `proposed`; investigación documental; implementación: no iniciada.**
+**Status: `proposed`; documentary research; implementation: not started.**
 
-**Preferencias de usuario: `proposed`; pendientes de validar con prototipo y pruebas.**
+**User preferences: `proposed`; pending validation with a prototype and testing.**
 
-**Fecha de consulta de fuentes:** 2026-09-04.
+**Source consultation date:** 2026-09-04.
 
-Este documento compara opciones actuales para una futura interfaz Nuxt y propone una dirección visual para `alerts.fishing`. No afirma que exista una aplicación, un sistema de UI, una dependencia instalada, un mapa, datos reales ni una integración. La arquitectura existente mantiene Nuxt, Vue, TypeScript, Tailwind CSS, shadcn-vue y Lucide en estado `proposed`; esta investigación puede orientar una decisión posterior, pero no la sustituye.
+This document compares current options for a future Nuxt interface and proposes a visual direction for `alerts.fishing`. It does not claim that an application, UI system, installed dependency, map, real data, or integration exists. The existing architecture keeps Nuxt, Vue, TypeScript, Tailwind CSS, shadcn-vue, and Lucide in `proposed` status; this research may inform a later decision but does not replace it.
 
-## Especificación de esta investigación
+## Research specification
 
-### Problema
+### Problem
 
-La experiencia debe convertir condiciones de pesca complejas en una decisión local comprensible sin confundir score, confianza y seguridad. A la vez, necesita una identidad propia —futurismo costero, telemetría marina y píxel moderno— que siga siendo sobria, legible en movilidad y adecuada para textos extensos de explicación o normativa.
+The experience must turn complex fishing conditions into an understandable local decision without confusing score, confidence, and safety. At the same time, it needs its own identity—coastal futurism, marine telemetry, and modern pixel styling—that remains restrained, legible on the move, and suitable for lengthy explanatory or regulatory text.
 
-Una biblioteca con demasiado estilo incorporado puede conducir a una apariencia genérica. Una base completamente headless puede ofrecer más identidad, pero desplaza al producto el coste de construir, probar y mantener cada patrón visual, responsive y accesible.
+A library with too much built-in styling can lead to a generic appearance. A completely headless foundation can offer more identity, but shifts the cost of building, testing, and maintaining every visual, responsive, and accessible pattern to the product.
 
-### Objetivos
+### Goals
 
-- Comparar como máximo cuatro enfoques vigentes y compatibles con Vue/Nuxt.
-- Proponer tres intensidades visuales concretas y comparables.
-- Recomendar una base inicial que favorezca un vertical slice pequeño sin hipotecar una identidad propia.
-- Definir una guía visual verificable para score, confianza, seguridad, ventanas y registro de sesión.
-- Preservar privacidad, procedencia y etiquetas inequívocas para cualquier contenido mock.
+- Compare no more than four current approaches compatible with Vue/Nuxt.
+- Propose three specific, comparable visual intensities.
+- Recommend an initial foundation that supports a small vertical slice without compromising a distinctive identity.
+- Define verifiable visual guidance for score, confidence, safety, windows, and session recording.
+- Preserve privacy, provenance, and unambiguous labels for any mock content.
 
-### Requisitos
+### Requirements
 
-- Evaluar accesibilidad, madurez, personalización, rendimiento, respuesta en distintos tamaños, mantenimiento, velocidad de desarrollo, riesgo de apariencia genérica, compatibilidad con Nuxt y licencia.
-- Cubrir en cada dirección paleta, tipografías y licencias, radios, bordes, sombras, espaciado, iconografía, movimiento, componentes, accesibilidad y riesgos.
-- Mantener aproximadamente un 80 % de producto moderno y un 20 % de carácter píxel en la recomendación.
-- Priorizar el tema oscuro sin bloquear un tema claro completo y accesible.
-- Usar el carácter pixelado o monoespaciado solo donde aporte jerarquía e identidad.
-- Evitar copiar marcas, interfaces, tipografías, iconos, *trade dress* o cualquier otro activo de Atari; “Atari” describe únicamente una sensación abstracta de consola retrofuturista pixelada.
-- No presentar resultados de rendimiento sin una medición reproducible del producto.
+- Evaluate accessibility, maturity, customization, performance, responsiveness across sizes, maintenance, development speed, risk of a generic appearance, Nuxt compatibility, and licensing.
+- For each direction, cover palette, typography and licenses, radii, borders, shadows, spacing, iconography, motion, components, accessibility, and risks.
+- Maintain approximately 80% modern product and 20% pixel character in the recommendation.
+- Prioritize the dark theme without blocking a complete, accessible light theme.
+- Use pixel or monospaced styling only where it adds hierarchy and identity.
+- Avoid copying Atari brands, interfaces, typefaces, icons, *trade dress*, or any other assets; “Atari” describes only an abstract sense of a pixelated retro-futurist console.
+- Do not present performance results without a reproducible product measurement.
 
-### Fuera de alcance
+### Out of scope
 
-- Instalar dependencias, crear componentes o afirmar que están implementados.
-- Diseñar un mapa avanzado, publicar coordenadas o representar ubicaciones sensibles con precisión.
-- Cambiar la arquitectura, cerrar una decisión o sustituir la validación de accesibilidad con una afirmación del proveedor.
-- Crear una marca derivada de una propiedad intelectual de terceros.
-- Validar proveedores, normativa, seguridad o datos reales.
+- Installing dependencies, creating components, or claiming that they are implemented.
+- Designing an advanced map, publishing coordinates, or representing sensitive locations precisely.
+- Changing the architecture, closing a decision, or replacing accessibility validation with a vendor claim.
+- Creating a brand derived from third-party intellectual property.
+- Validating providers, regulations, safety, or real data.
 
-### Criterios de aceptación de la investigación
+### Research acceptance criteria
 
-- [x] Se comparan exactamente cuatro opciones actuales, incluidas las tres requeridas y una alternativa headless útil.
-- [x] Cada opción cubre los diez criterios técnicos y de producto requeridos.
-- [x] Se presentan las tres direcciones visuales solicitadas con todos sus atributos.
-- [x] La propuesta inicial incorpora las preferencias comunicadas por el usuario como `proposed`.
-- [x] La recomendación distingue lo propuesto de lo implementado y enumera validaciones pendientes.
-- [x] Las afirmaciones externas se apoyan en fuentes oficiales o primarias consultadas el 2026-09-04.
-- [x] Se derivan validaciones futuras de accesibilidad, responsive, rendimiento y diferenciación visual.
+- [x] Exactly four current options are compared, including the three required options and one useful headless alternative.
+- [x] Each option covers all ten required technical and product criteria.
+- [x] The three requested visual directions are presented with all their attributes.
+- [x] The initial proposal incorporates the user's stated preferences as `proposed`.
+- [x] The recommendation distinguishes what is proposed from what is implemented and lists pending validations.
+- [x] External claims are supported by official or primary sources consulted on 2026-09-04.
+- [x] Future accessibility, responsive, performance, and visual differentiation validations are derived.
 
-## Preferencias recibidas
+## Preferences received
 
-Las siguientes preferencias son **input `proposed`**, no una decisión aceptada ni evidencia de usabilidad:
+The following preferences are **`proposed` input**, not an accepted decision or usability evidence:
 
-- intensidad pixelada equilibrada;
-- oscuro prioritario, manteniendo un modo claro completo y accesible;
-- geometría técnica equilibrada, con esquinas rectas y bordes técnicos en dosis moderadas;
-- animaciones breves y precisas;
-- “Terminal atlántico equilibrado” como dirección inicial preferida.
+- balanced pixel intensity;
+- dark-first, while maintaining a complete and accessible light mode;
+- balanced technical geometry, with square corners and technical borders in moderation;
+- brief, precise animations;
+- “Balanced Atlantic terminal” as the preferred initial direction.
 
-Estas preferencias justifican la recomendación inicial, pero deben contrastarse con un prototipo que incluya contenido realista, uso móvil exterior, lectura prolongada y navegación por teclado.
+These preferences justify the initial recommendation but must be evaluated with a prototype that includes realistic content, outdoor mobile use, extended reading, and keyboard navigation.
 
-## Comparación de enfoques actuales
+## Comparison of current approaches
 
-Las versiones son una fotografía de los paquetes publicados consultados el 2026-09-04, no una versión fijada para el proyecto: UnoCSS 66.10.0, Reka UI 2.10.4, Nuxt UI 4.11.0, PrimeVue 5.0.1 y Ark UI Vue 5.39.1. Deben volver a comprobarse al crear una especificación de implementación.
+Versions are a snapshot of published packages consulted on 2026-09-04, not versions pinned for the project: UnoCSS 66.10.0, Reka UI 2.10.4, Nuxt UI 4.11.0, PrimeVue 5.0.1, and Ark UI Vue 5.39.1. They must be checked again when an implementation specification is created.
 
 ### 1. UnoCSS + Reka UI
 
-**Encaje general: alto control visual, coste de composición alto.**
+**Overall fit: high visual control, high composition cost.**
 
-- **Accesibilidad:** Reka UI declara alineación con patrones WAI-ARIA, navegación por teclado y gestión de foco, y recuerda que el producto sigue siendo responsable de etiquetas y contexto. Es una base sólida, no una certificación del resultado.
-- **Madurez:** Reka es la evolución de Radix Vue y ofrece más de 40 primitivas; UnoCSS mantiene integraciones oficiales y un motor extensible. Hay dos superficies de mantenimiento y será necesario versionarlas de forma coordinada.
-- **Personalización:** es el enfoque con más libertad. Reka no impone estilos y UnoCSS permite reglas, *shortcuts*, variantes y presets propios; encaja bien con bordes técnicos, módulos pixelados y tokens semánticos.
-- **Rendimiento:** UnoCSS genera utilidades bajo demanda y Reka declara *tree-shaking* para primitivas no usadas. Eso sugiere potencial para una salida contenida, pero el tamaño y coste de interacción solo pueden juzgarse sobre un prototipo y un presupuesto medido.
-- **Responsive:** UnoCSS facilita reglas y variantes, pero no aporta por sí solo una arquitectura responsive. El equipo debe definir reflow, densidad, gestos y composición móvil de cada patrón.
-- **Mantenimiento:** exige mantener tokens, recetas, componentes compuestos y pruebas de regresión. La libertad inicial se convierte en propiedad sostenida del sistema.
-- **Velocidad de desarrollo:** media-baja al principio; mejora cuando existe una capa propia de componentes. Es desproporcionado si el primer vertical necesita principalmente tarjetas, estados, formularios y overlays convencionales.
-- **Apariencia no genérica:** excelente; el resultado no hereda un lenguaje visual predeterminado.
-- **Compatibilidad Nuxt:** ambos ofrecen módulo oficial de Nuxt. Reka documenta SSR y una consideración histórica de hidratación para Vue anterior a 3.5, por lo que la matriz exacta debe verificarse con las versiones elegidas.
-- **Licencia:** UnoCSS y Reka UI se publican bajo MIT.
+- **Accessibility:** Reka UI states alignment with WAI-ARIA patterns, keyboard navigation, and focus management, and notes that the product remains responsible for labels and context. It is a solid foundation, not certification of the outcome.
+- **Maturity:** Reka is the evolution of Radix Vue and provides more than 40 primitives; UnoCSS maintains official integrations and an extensible engine. There are two maintenance surfaces, and their versions will need to be coordinated.
+- **Customization:** this approach offers the most freedom. Reka imposes no styles, while UnoCSS supports custom rules, *shortcuts*, variants, and presets; it fits technical borders, pixel modules, and semantic tokens well.
+- **Performance:** UnoCSS generates utilities on demand, and Reka claims *tree-shaking* for unused primitives. This suggests the potential for contained output, but size and interaction cost can only be judged on a prototype against a measured budget.
+- **Responsive:** UnoCSS facilitates rules and variants but does not itself provide a responsive architecture. The team must define reflow, density, gestures, and mobile composition for each pattern.
+- **Maintenance:** requires maintaining tokens, recipes, composed components, and regression tests. Initial freedom becomes ongoing ownership of the system.
+- **Development speed:** medium to low at first; it improves once an internal component layer exists. It is disproportionate if the first vertical mainly needs conventional cards, states, forms, and overlays.
+- **Non-generic appearance:** excellent; the result inherits no predefined visual language.
+- **Nuxt compatibility:** both provide an official Nuxt module. Reka documents SSR and a historical hydration consideration for Vue versions before 3.5, so the exact matrix must be verified with the selected versions.
+- **License:** UnoCSS and Reka UI are published under MIT.
 
-**Conclusión `proposed`:** reservar como alternativa si el prototipo con Nuxt UI demuestra que la capa visual requiere demasiadas anulaciones o si se decide poseer un sistema de diseño más bajo nivel. No es la primera opción para maximizar velocidad en el vertical inicial.
+**`proposed` conclusion:** reserve as an alternative if the Nuxt UI prototype shows that the visual layer requires too many overrides or if owning a lower-level design system becomes a decision. It is not the first choice for maximizing speed in the initial vertical slice.
 
 ### 2. Nuxt UI
 
-**Encaje general: mejor equilibrio inicial entre velocidad, integración y capacidad de tematización.**
+**Overall fit: best initial balance among speed, integration, and theming capability.**
 
-- **Accesibilidad:** se apoya en Reka UI para ARIA, teclado y foco. La documentación reconoce que las pruebas del caso de uso siguen siendo necesarias.
-- **Madurez:** la rama v4 unificó la oferta abierta y documenta más de 125 componentes, TypeScript, internacionalización, color mode y ejemplos. Esta amplitud reduce la cantidad de patrones básicos que habría que inventar.
-- **Personalización:** ofrece colores semánticos, variables de fondo, texto, borde y radio, variantes tipadas y ajustes globales o por slot. Es suficiente en principio para una capa temática propia, pero debe probarse en componentes densos.
-- **Rendimiento:** la integración es compatible con SSR y la biblioteca usa Tailwind CSS y Reka UI. No se asume que sea la opción más ligera; deben medirse CSS, JavaScript, hidratación y componentes realmente importados.
-- **Responsive:** incluye componentes y layouts responsive, pero la jerarquía móvil, la reordenación de score/confianza/seguridad y la navegación con pulgar siguen siendo decisiones del producto.
-- **Mantenimiento:** una sola biblioteca de alto nivel reduce código propio y se alinea con el Tailwind ya `proposed`. El coste es seguir sus APIs, versiones y decisiones de composición.
-- **Velocidad de desarrollo:** alta para tarjetas, formularios, navegación, overlays, tablas y color mode. Sus APIs tipadas y autoimportación favorecen un vertical corto.
-- **Apariencia no genérica:** media de fábrica y alta solo si se reemplazan deliberadamente paleta, tipografía, radios, sombras, densidad y variantes. Usar los defaults produciría una apariencia reconociblemente genérica.
-- **Compatibilidad Nuxt:** directa y oficial; también admite Vue sin Nuxt. Es la integración menos friccional de las cuatro para el stack `proposed`.
-- **Licencia:** MIT para Nuxt UI v4 según documentación y repositorio oficiales.
+- **Accessibility:** relies on Reka UI for ARIA, keyboard, and focus. The documentation acknowledges that use-case testing remains necessary.
+- **Maturity:** the v4 branch unified the open offering and documents more than 125 components, TypeScript, internationalization, color mode, and examples. This breadth reduces the number of basic patterns that would need to be invented.
+- **Customization:** provides semantic colors; background, text, border, and radius variables; typed variants; and global or per-slot adjustments. In principle, this is sufficient for a custom theme layer, but it must be tested on dense components.
+- **Performance:** the integration supports SSR, and the library uses Tailwind CSS and Reka UI. It is not assumed to be the lightest option; CSS, JavaScript, hydration, and the components actually imported must be measured.
+- **Responsive:** includes responsive components and layouts, but mobile hierarchy, reordering of score/confidence/safety, and thumb navigation remain product decisions.
+- **Maintenance:** one high-level library reduces custom code and aligns with the already `proposed` Tailwind. The cost is following its APIs, versions, and composition decisions.
+- **Development speed:** high for cards, forms, navigation, overlays, tables, and color mode. Typed APIs and auto-imports support a short vertical slice.
+- **Non-generic appearance:** medium by default and high only if palette, typography, radii, shadows, density, and variants are deliberately replaced. Using defaults would produce a recognizably generic appearance.
+- **Nuxt compatibility:** direct and official; it also supports Vue without Nuxt. Of the four, it has the lowest-friction integration for the `proposed` stack.
+- **License:** MIT for Nuxt UI v4 according to official documentation and repository.
 
-**Conclusión `proposed`:** opción inicial recomendada, condicionada a un *spike* visual de uno o dos flujos que demuestre identidad suficiente, accesibilidad y un coste de overrides razonable.
+**`proposed` conclusion:** recommended initial option, conditional on a one- or two-flow visual *spike* demonstrating sufficient identity, accessibility, and a reasonable override cost.
 
-### 3. PrimeVue en modo unstyled
+### 3. PrimeVue in unstyled mode
 
-**Encaje general: gran amplitud funcional, pero riesgo de licencia actual y complejidad innecesaria para el primer vertical.**
+**Overall fit: broad feature set, but current licensing risk and unnecessary complexity for the first vertical slice.**
 
-- **Accesibilidad:** PrimeVue documenta semántica, teclado y detalles por componente. El modo unstyled conserva funcionalidad y accesibilidad base, pero el producto asume estados visuales, contraste y foco.
-- **Madurez:** existe una larga trayectoria y una suite amplia. Sin embargo, el repositorio MIT de PrimeVue 4 fue archivado en junio de 2026 y el desarrollo actual continúa en PrimeVue 5 bajo PrimeUI; este cambio reduce la comparabilidad histórica de mantenimiento y licencia.
-- **Personalización:** el modo unstyled elimina reglas y variables de tema. La API Pass Through permite clases, atributos y eventos sobre partes internas, con configuración global o local. Ofrece control alto, aunque acopla recetas a la anatomía de cada componente.
-- **Rendimiento:** el módulo Nuxt anuncia autoimportación con *tree-shaking*. La suite es amplia y debe medirse por selección real; no hay base para declarar que supere a las otras opciones.
-- **Responsive:** aporta componentes de datos ricos, pero no resuelve la adaptación de una experiencia pesquera a móvil. Algunos patrones empresariales pueden requerir una alternativa en tarjetas o vistas apiladas.
-- **Mantenimiento:** el cambio de licencia, el uso de clave y la transición de major incrementan la carga operativa. El preset unstyled también requiere mantener estilos por parte interna.
-- **Velocidad de desarrollo:** alta si se necesitan de inmediato componentes de datos complejos; media con un lenguaje completamente propio por el trabajo de tematización.
-- **Apariencia no genérica:** alta en unstyled si se diseña desde tokens propios; riesgo medio-alto de deriva hacia un panel empresarial genérico si se reutilizan convenciones o presets sin criterio.
-- **Compatibilidad Nuxt:** módulo oficial para PrimeVue 5 con autoimportación y configuración de licencia pública. La integración existe, pero la clave y sus términos deben revisarse antes de adopción.
-- **Licencia:** `needs-validation`. PrimeVue 5.0.1 ya no es MIT: usa la licencia PrimeUI. La licencia Community exige, entre otros límites, menos de cinco desarrolladores, menos de diez empleados, menos de un millón de dólares de ingresos o presupuesto anual, no más de tres millones de financiación externa, exclusión del sector público, clave y renovación anual. PrimeVue 4 y anteriores siguen MIT, pero su repositorio está archivado. No debe adoptarse ninguna variante sin revisión de elegibilidad, coste, obligaciones y horizonte de actualizaciones.
+- **Accessibility:** PrimeVue documents semantics, keyboard support, and details per component. Unstyled mode preserves base behavior and accessibility, but the product takes responsibility for visual states, contrast, and focus.
+- **Maturity:** it has a long history and a broad suite. However, the MIT PrimeVue 4 repository was archived in June 2026, and current development continues in PrimeVue 5 under PrimeUI; this change reduces the historical comparability of maintenance and licensing.
+- **Customization:** unstyled mode removes theme rules and variables. The Pass Through API allows classes, attributes, and events on internal parts, with global or local configuration. It offers high control, although it couples recipes to each component's anatomy.
+- **Performance:** the Nuxt module advertises auto-imports with *tree-shaking*. The suite is broad and must be measured using the actual selection; there is no basis for declaring it superior to the other options.
+- **Responsive:** provides rich data components but does not solve adapting a fishing experience to mobile devices. Some enterprise patterns may require a card or stacked-view alternative.
+- **Maintenance:** the license change, use of a key, and major-version transition increase operational overhead. The unstyled preset also requires maintaining styles for each internal part.
+- **Development speed:** high if complex data components are immediately required; medium with a completely custom visual language due to theming work.
+- **Non-generic appearance:** high in unstyled mode when designed from custom tokens; medium-to-high risk of drifting toward a generic enterprise dashboard if conventions or presets are reused uncritically.
+- **Nuxt compatibility:** official module for PrimeVue 5 with auto-imports and public license-key configuration. Integration exists, but the key and its terms must be reviewed before adoption.
+- **License:** `needs-validation`. PrimeVue 5.0.1 is no longer MIT: it uses the PrimeUI license. Among other limits, the Community license requires fewer than five developers, fewer than ten employees, less than one million dollars in annual revenue or budget, no more than three million in external funding, exclusion of the public sector, a key, and annual renewal. PrimeVue 4 and earlier remain MIT, but their repository is archived. No variant should be adopted without reviewing eligibility, cost, obligations, and the update horizon.
 
-**Conclusión `proposed`:** no recomendar para el inicio. Reconsiderar únicamente si un requisito verificado de tabla, calendario u otro widget complejo compensa la licencia y el acoplamiento, y tras revisión legal/comercial.
+**`proposed` conclusion:** not recommended initially. Reconsider only if a verified requirement for a table, calendar, or other complex widget offsets the licensing and coupling, and after legal/commercial review.
 
-### 4. Ark UI para Vue
+### 4. Ark UI for Vue
 
-**Encaje general: alternativa headless moderna y útil para interacciones complejas.**
+**Overall fit: modern headless alternative useful for complex interactions.**
 
-- **Accesibilidad:** documenta patrones WAI-ARIA y soporte de teclado por componente; su lógica se basa en máquinas de estado de Zag.js. Aun así, nombres accesibles, estilos de foco y pruebas con tecnología asistiva corresponden al producto.
-- **Madurez:** ofrece más de 40 componentes para Vue, React, Solid y Svelte, mantenidos por el equipo de Chakra UI. El changelog frecuente muestra evolución activa y también correcciones recientes de SSR y accesibilidad que conviene vigilar.
-- **Personalización:** completamente unstyled y granular; admite CSS, utilidades o cualquier sistema de estilos. Permite una identidad muy propia sin luchar contra defaults.
-- **Rendimiento:** la arquitectura por paquetes de componente y máquinas de estado es prometedora para imports selectivos. No se adopta la afirmación comparativa de rendimiento del proveedor sin benchmark reproducible en Nuxt.
-- **Responsive:** no impone layout. Incluye primitivas útiles, pero toda la experiencia responsive y la densidad exterior deben diseñarse y probarse localmente.
-- **Mantenimiento:** la lógica compleja permanece en Zag/Ark, mientras el equipo mantiene wrappers, estilos y tests visuales. Su API multi-framework añade una capa que debe verificarse en SSR de Nuxt.
-- **Velocidad de desarrollo:** media. Puede acelerar selects, popovers, sliders y diálogos complejos, pero es más lenta que Nuxt UI para construir un producto coherente desde cero.
-- **Apariencia no genérica:** excelente porque no aporta estética predeterminada.
-- **Compatibilidad Nuxt:** el paquete oficial soporta Vue y existen ejemplos de Nuxt, pero no se documenta una integración Nuxt tan directa como las de Nuxt UI, Reka o PrimeVue. Un *spike* debe probar SSR, teleports, IDs e hidratación.
-- **Licencia:** MIT.
+- **Accessibility:** documents WAI-ARIA patterns and keyboard support per component; its logic is based on Zag.js state machines. Accessible names, focus styling, and assistive-technology testing still belong to the product.
+- **Maturity:** provides more than 40 components for Vue, React, Solid, and Svelte, maintained by the Chakra UI team. The frequent changelog shows active evolution as well as recent SSR and accessibility fixes that should be monitored.
+- **Customization:** completely unstyled and granular; supports CSS, utilities, or any styling system. It enables a highly distinctive identity without fighting defaults.
+- **Performance:** the component-package and state-machine architecture is promising for selective imports. The vendor's comparative performance claim is not adopted without a reproducible Nuxt benchmark.
+- **Responsive:** imposes no layout. It includes useful primitives, but the entire responsive experience and outdoor density must be designed and tested locally.
+- **Maintenance:** complex logic remains in Zag/Ark while the team maintains wrappers, styles, and visual tests. Its multi-framework API adds a layer that must be verified in Nuxt SSR.
+- **Development speed:** medium. It may accelerate complex selects, popovers, sliders, and dialogs, but is slower than Nuxt UI for building a coherent product from scratch.
+- **Non-generic appearance:** excellent because it provides no default aesthetic.
+- **Nuxt compatibility:** the official package supports Vue, and Nuxt examples exist, but an integration as direct as those for Nuxt UI, Reka, or PrimeVue is not documented. A *spike* must test SSR, teleports, IDs, and hydration.
+- **License:** MIT.
 
-**Conclusión `proposed`:** segunda alternativa headless útil cuando se necesiten máquinas de estado o patrones que no cubra bien la opción inicial. No mezclarla preventivamente con Reka UI: duplicaría primitivas y criterios sin una necesidad demostrada.
+**`proposed` conclusion:** a useful second headless alternative when state machines or patterns that the initial option does not cover well are needed. Do not mix it preemptively with Reka UI: that would duplicate primitives and criteria without a demonstrated need.
 
-## Síntesis y recomendación técnica
+## Synthesis and technical recommendation
 
-**Recomendación inicial `proposed`: Nuxt UI v4 sobre su base Reka UI y Tailwind CSS, con una capa de tokens y variantes propia de `alerts.fishing`.**
+**Initial `proposed` recommendation: Nuxt UI v4 on its Reka UI and Tailwind CSS foundation, with a custom `alerts.fishing` token and variant layer.**
 
-La recomendación prioriza el tiempo hasta un vertical verificable, la compatibilidad directa con el stack ya `proposed`, la cobertura de componentes y una base accesible. No recomienda adoptar el aspecto por defecto: la identidad debe residir en tokens semánticos, tipografía, composición, iconografía y unas pocas variantes propias.
+The recommendation prioritizes time to a verifiable vertical slice, direct compatibility with the already `proposed` stack, component coverage, and an accessible foundation. It does not recommend adopting the default appearance: identity should reside in semantic tokens, typography, composition, iconography, and a few custom variants.
 
-La decisión debe mantenerse reversible:
+The decision must remain reversible:
 
-1. definir tokens independientes de la biblioteca y del nombre comercial;
-2. componer un *spike* con listado de oportunidades, detalle de ventana, puerta de seguridad y registro de bolo;
-3. medir overrides, CSS/JavaScript, hidratación y accesibilidad;
-4. continuar con Nuxt UI si el carácter visual se consigue sin excepciones repetitivas;
-5. evaluar UnoCSS + Reka UI si el spike revela fricción estructural, no solo preferencias menores;
-6. usar Ark UI únicamente ante una interacción compleja verificada y PrimeVue únicamente tras resolver licencia y necesidad funcional.
+1. define tokens independent of the library and commercial name;
+2. compose a *spike* with an opportunity list, window details, safety gate, and blank-session recording;
+3. measure overrides, CSS/JavaScript, hydration, and accessibility;
+4. continue with Nuxt UI if the visual character can be achieved without repetitive exceptions;
+5. evaluate UnoCSS + Reka UI if the spike reveals structural friction, not merely minor preferences;
+6. use Ark UI only for a verified complex interaction and PrimeVue only after resolving licensing and functional need.
 
-No se propone mezclar bibliotecas de primitivas en el primer vertical.
+Mixing primitive libraries in the first vertical slice is not proposed.
 
-## Direcciones visuales
+## Visual directions
 
-Los colores son semillas de diseño, no tokens aprobados. Los contrastes indicados se calcularon con la fórmula de luminancia relativa de WCAG sobre pares de texto/fondo concretos; todos los estados, transparencias, overlays, mapas y temas deberán verificarse de nuevo en contexto.
+The colors are design seeds, not approved tokens. The listed contrast ratios were calculated with the WCAG relative-luminance formula for specific text/background pairs; every state, transparency, overlay, map, and theme must be checked again in context.
 
-### Dirección 1: Costa mínima
+### Direction 1: Minimal coast
 
-**Estado: `proposed`; intensidad píxel baja.**
+**Status: `proposed`; low pixel intensity.**
 
-Una interfaz silenciosa y muy contenida: aire, horizontes limpios y datos principales sin ornamentación de consola.
+A quiet, highly restrained interface: open space, clean horizons, and primary data without console ornamentation.
 
-- **Paleta:** oscuro `#071B24`, superficie `#0D2832`, texto `#ECF8F6`, texto secundario `#ACC5C5`, turquesa `#4FD1C5`, coral `#FF8A73`; claro `#F4F8F6`, superficie `#FFFFFF`, texto `#102A30`, secundario `#52696D`, turquesa `#006F69`, coral `#A93A2C`. Los pares de texto/acentos listados sobre el fondo base van aproximadamente de 5.45:1 a 16.22:1.
-- **Fuentes y licencias:** Geist Sans para lectura y Geist Mono solo para hora, versión y valores; familia bajo SIL Open Font License 1.1. No usar Geist Pixel.
-- **Radios:** 8 px en tarjeta, 6 px en control, círculo solo para indicadores que lo requieran; nada de píldoras decorativas repetidas.
-- **Bordes:** 1 px de bajo contraste y una línea de acento solo en estados seleccionados o críticos.
-- **Sombras:** casi inexistentes; elevación mediante contraste entre superficies, con una sombra ambiental suave solo en overlays.
-- **Espaciado:** escala base de 4 px, ritmo generoso de 16/24/32 px, densidad media en datos secundarios.
-- **Iconografía:** Lucide, trazo 1.75–2 px, siempre con texto o nombre accesible cuando comunique acción o estado.
-- **Movimiento:** 100–160 ms para feedback y 180–220 ms para overlays; opacidad y desplazamientos de 2–4 px, sin barridos ni parpadeo.
-- **Componentes:** tarjetas planas de oportunidad, timeline simple, tres bloques claramente separados para score/confianza/seguridad, explicación en prosa y formulario de sesión sobrio.
-- **Accesibilidad:** es la dirección con menor ruido; mantener foco de alto contraste, no depender del coral/turquesa para el significado y preservar 44 px como objetivo táctil interno aunque WCAG AA permita 24 px en condiciones concretas.
-- **Riesgos:** identidad insuficiente, parecido a otros productos minimalistas y menor señal de telemetría. Puede sentirse demasiado editorial para decisiones rápidas en costa.
+- **Palette:** dark `#071B24`, surface `#0D2832`, text `#ECF8F6`, secondary text `#ACC5C5`, turquoise `#4FD1C5`, coral `#FF8A73`; light `#F4F8F6`, surface `#FFFFFF`, text `#102A30`, secondary `#52696D`, turquoise `#006F69`, coral `#A93A2C`. Listed text/accent pairs on the base background range approximately from 5.45:1 to 16.22:1.
+- **Fonts and licenses:** Geist Sans for reading and Geist Mono only for time, version, and values; family under SIL Open Font License 1.1. Do not use Geist Pixel.
+- **Radii:** 8 px on cards, 6 px on controls, circles only for indicators that require them; no repeated decorative pills.
+- **Borders:** 1 px, low contrast, with an accent line only on selected or critical states.
+- **Shadows:** nearly absent; elevation through surface contrast, with a soft ambient shadow only on overlays.
+- **Spacing:** 4 px base scale, generous 16/24/32 px rhythm, medium density for secondary data.
+- **Iconography:** Lucide, 1.75–2 px stroke, always with text or an accessible name when communicating an action or state.
+- **Motion:** 100–160 ms for feedback and 180–220 ms for overlays; opacity and 2–4 px movement, without sweeps or blinking.
+- **Components:** flat opportunity cards, simple timeline, three clearly separated blocks for score/confidence/safety, prose explanation, and a restrained session form.
+- **Accessibility:** this direction has the least noise; maintain high-contrast focus, do not rely on coral/turquoise for meaning, and preserve 44 px as the internal touch-target goal even though WCAG AA permits 24 px under specific conditions.
+- **Risks:** insufficient identity, resemblance to other minimalist products, and a weaker telemetry signal. It may feel too editorial for quick coastal decisions.
 
-### Dirección 2: Terminal atlántico equilibrado
+### Direction 2: Balanced Atlantic terminal
 
-**Estado: `proposed`; dirección inicial recomendada.**
+**Status: `proposed`; recommended initial direction.**
 
-Combina producto moderno con detalles de terminal marina: aproximadamente 80 % claridad funcional y 20 % carácter píxel. Debe sentirse técnico y sofisticado, nunca infantil ni como una recreativa genérica.
+Combines a modern product with marine-terminal details: approximately 80% functional clarity and 20% pixel character. It should feel technical and sophisticated, never childish or like a generic arcade game.
 
-- **Paleta:** oscuro prioritario `#061822`, superficie `#0A2531`, elevado `#103541`, texto `#ECFAF7`, secundario `#AAC6C5`, turquesa `#39DAC7`, azul atlántico `#3E8FD8`, coral `#FF8069`; claro `#F3F8F7`, superficie `#FFFFFF`, elevado `#DCEBE8`, texto `#102930`, secundario `#4F686D`, turquesa `#007C74`, azul `#25639A`, coral `#B43F31`. Los pares listados sobre el fondo base van aproximadamente de 4.74:1 a 16.86:1; combinaciones sobre superficies alternas, transparencias y estados siguen sin validar.
-- **Fuentes y licencias:** Geist Sans para navegación, explicaciones y normativa; Geist Mono para hora, score, frescura y versiones; Geist Pixel Square o Grid solo para títulos cortos, marca de sección o numeración de ventana. Toda la familia usa SIL OFL 1.1.
-- **Radios:** 6 px en contenedores, 4 px en controles y algunos cortes rectos en cabeceras o esquinas de módulos; evitar convertir cada bloque en una caja angular.
-- **Bordes:** 1 px técnico, separadores segmentados únicamente en timeline y telemetría, y doble señal —icono/texto más color— para estados.
-- **Sombras:** elevación corta y fría (`0 8px 24px` con baja opacidad) solo en overlays; brillo turquesa muy sutil exclusivamente en foco o dato activo, nunca alrededor de texto continuo.
-- **Espaciado:** base de 4 px; 8/12 px dentro de telemetría, 16/20 px en tarjetas y 24/32 px entre regiones. Mantener aire suficiente para uso táctil.
-- **Iconografía:** Lucide ISC como base coherente; un subconjunto de pictogramas marinos propios podría estudiarse después, siempre original, ópticamente compatible y con licencia documentada. Los iconos de seguridad no pueden ser decorativos ni depender del color.
-- **Movimiento:** 120–180 ms para cambios de estado, 180–240 ms para paneles; escalonamiento máximo de 30 ms en una lista corta, curva precisa sin rebote, y alternativa sin movimiento mediante `prefers-reduced-motion`.
-- **Componentes:** cabecera de horizonte 72 h, tarjetas de oportunidad, regla temporal segmentada, cápsulas de datos usadas con moderación, medidor no probabilístico de score, módulo independiente de confianza, puerta de seguridad dominante, factores favorables/desfavorables y registro de sesión/bolo. Cualquier representación geográfica inicial debe ser abstracta, mock y no sensible; los mapas avanzados siguen `future`.
-- **Accesibilidad:** prosa en sans, ancho de lectura contenido, monospace/píxel nunca para normativa larga, jerarquía redundante de texto/icono/color, foco persistente, orden DOM igual al orden visual y tema claro con paridad funcional.
-- **Riesgos:** abuso de paneles, mayúsculas, rejillas o brillo; confundir estética de terminal con mayor certeza; compactar en exceso; o acercarse a una apariencia de videojuego. El límite 80/20 debe revisarse en conjunto, no aplicarse literalmente a cada componente.
+- **Palette:** dark-first `#061822`, surface `#0A2531`, raised `#103541`, text `#ECFAF7`, secondary `#AAC6C5`, turquoise `#39DAC7`, Atlantic blue `#3E8FD8`, coral `#FF8069`; light `#F3F8F7`, surface `#FFFFFF`, raised `#DCEBE8`, text `#102930`, secondary `#4F686D`, turquoise `#007C74`, blue `#25639A`, coral `#B43F31`. Listed pairs on the base background range approximately from 4.74:1 to 16.86:1; combinations on alternate surfaces, transparencies, and states remain unvalidated.
+- **Fonts and licenses:** Geist Sans for navigation, explanations, and regulations; Geist Mono for time, score, freshness, and versions; Geist Pixel Square or Grid only for short titles, section labels, or window numbering. The entire family uses SIL OFL 1.1.
+- **Radii:** 6 px on containers, 4 px on controls, and some square cuts on headers or module corners; avoid turning every block into an angular box.
+- **Borders:** 1 px technical border, segmented separators only on the timeline and telemetry, and dual signaling—icon/text plus color—for states.
+- **Shadows:** short, cool elevation (`0 8px 24px` at low opacity) only on overlays; very subtle turquoise glow exclusively for focus or active data, never around continuous text.
+- **Spacing:** 4 px base; 8/12 px inside telemetry, 16/20 px on cards, and 24/32 px between regions. Retain enough space for touch use.
+- **Iconography:** ISC-licensed Lucide as the coherent foundation; a subset of custom marine pictograms could be studied later, always original, optically compatible, and with a documented license. Safety icons cannot be decorative or depend on color.
+- **Motion:** 120–180 ms for state changes, 180–240 ms for panels; maximum stagger of 30 ms in a short list, precise curve without bounce, and a no-motion alternative through `prefers-reduced-motion`.
+- **Components:** 72 h horizon header, opportunity cards, segmented time ruler, sparingly used data capsules, non-probabilistic score gauge, independent confidence module, dominant safety gate, favorable/unfavorable factors, and session/blank-session recording. Any initial geographic representation must be abstract, mock, and non-sensitive; advanced maps remain `future`.
+- **Accessibility:** sans-serif prose, constrained reading width, monospaced/pixel fonts never used for lengthy regulations, redundant text/icon/color hierarchy, persistent focus, DOM order matching visual order, and a light theme with functional parity.
+- **Risks:** overuse of panels, uppercase, grids, or glow; confusing terminal aesthetics with greater certainty; excessive compression; or drifting toward a video-game appearance. The 80/20 boundary must be reviewed as a whole, not applied literally to every component.
 
-### Dirección 3: Futurismo píxel intenso
+### Direction 3: Intense pixel futurism
 
-**Estado: `proposed`; alternativa expresiva, no recomendada inicialmente.**
+**Status: `proposed`; expressive alternative, not initially recommended.**
 
-Una consola costera marcada: rejilla visible, tipografía de display pixelada y estados de telemetría muy presentes.
+A pronounced coastal console: visible grid, pixel display type, and prominent telemetry states.
 
-- **Paleta:** oscuro `#040F18`, superficie `#071D29`, texto `#F1FBF8`, secundario `#AAC3C4`, cian `#2EE6CD`, azul eléctrico `#4B9FFF`, coral `#FF725E`; claro `#F1F7F5`, superficie `#FFFFFF`, texto `#0A252C`, secundario `#4A6368`, turquesa `#00786F`, azul `#245E9B`, coral `#B6382C`. Los pares listados sobre el fondo base van aproximadamente de 4.94:1 a 18.31:1.
-- **Fuentes y licencias:** Atkinson Hyperlegible Next para lectura prolongada y Geist Mono para datos; Geist Pixel Grid/Square para display. Atkinson y Geist se distribuyen bajo SIL OFL 1.1.
-- **Radios:** 0–2 px, cortes escalonados y contornos ortogonales. Los controles táctiles conservan área amplia aunque parezcan compactos.
-- **Bordes:** rejilla de 1 px, esquinas recortadas y ticks; máximo dos niveles simultáneos para no fragmentar el contenido.
-- **Sombras:** sin sombra naturalista; halos de estado muy limitados y superficies separadas por contraste.
-- **Espaciado:** base de 4 px con mayor densidad interna, compensada por 24–32 px entre módulos principales.
-- **Iconografía:** Lucide dentro de marcos pixelados propios; prohibido sustituir claridad por glifos crípticos. No recrear mandos, logos o símbolos reconocibles de marcas retro.
-- **Movimiento:** barridos o revelados escalonados solo como detalle ornamental aislado, menos de 240 ms; nunca en alertas, lectura o navegación principal; versión reducida sin desplazamiento.
-- **Componentes:** panel de situación, retícula temporal, telemetría más densa, cursores de selección y separadores pixelados. Score, confianza y seguridad siguen separados y nombrados en lenguaje natural.
-- **Accesibilidad:** limitar mayúsculas y píxel a fragmentos cortos, permitir zoom/reflow, ofrecer tema claro completo, probar visión exterior y mantener patrones estándar de interacción aunque la piel sea experimental.
-- **Riesgos:** fatiga, menor comprensión, densidad aparente, estética arcade, falsa autoridad tecnológica y mantenimiento visual alto. Puede competir con el contenido y degradar la confianza.
+- **Palette:** dark `#040F18`, surface `#071D29`, text `#F1FBF8`, secondary `#AAC3C4`, cyan `#2EE6CD`, electric blue `#4B9FFF`, coral `#FF725E`; light `#F1F7F5`, surface `#FFFFFF`, text `#0A252C`, secondary `#4A6368`, turquoise `#00786F`, blue `#245E9B`, coral `#B6382C`. Listed pairs on the base background range approximately from 4.94:1 to 18.31:1.
+- **Fonts and licenses:** Atkinson Hyperlegible Next for extended reading and Geist Mono for data; Geist Pixel Grid/Square for display. Atkinson and Geist are distributed under SIL OFL 1.1.
+- **Radii:** 0–2 px, stepped cuts, and orthogonal outlines. Touch controls retain a large area even if they appear compact.
+- **Borders:** 1 px grid, clipped corners, and ticks; no more than two simultaneous levels to avoid fragmenting content.
+- **Shadows:** no naturalistic shadow; very limited state halos and surfaces separated by contrast.
+- **Spacing:** 4 px base with higher internal density, offset by 24–32 px between main modules.
+- **Iconography:** Lucide within custom pixel frames; clarity must never be replaced by cryptic glyphs. Do not recreate recognizable controls, logos, or symbols from retro brands.
+- **Motion:** sweeps or stepped reveals only as isolated ornamental details, under 240 ms; never in alerts, reading, or primary navigation; reduced version without movement.
+- **Components:** situation panel, time grid, denser telemetry, selection cursors, and pixel separators. Score, confidence, and safety remain separate and are named in natural language.
+- **Accessibility:** restrict uppercase and pixel type to short fragments, permit zoom/reflow, provide a complete light theme, test outdoor visibility, and retain standard interaction patterns even when the skin is experimental.
+- **Risks:** fatigue, lower comprehension, apparent density, arcade aesthetics, false technological authority, and high visual-maintenance cost. It may compete with content and degrade trust.
 
-## Propuesta inicial de sistema
+## Initial system proposal
 
-### Principios
+### Principles
 
-1. **Decisión antes que decoración.** La primera lectura siempre debe ser cuándo, dónde de forma no sensible, cómo, seguridad y confianza.
-2. **Tres señales, tres tratamientos.** Score, confianza y seguridad no comparten medidor ni color exclusivo. Seguridad puede invalidar una ventana favorable.
-3. **Telemetría honesta.** La estética técnica no implica precisión real. Los datos mock se etiquetan de forma persistente como simulados o de demostración.
-4. **Píxel como acento.** Aplicarlo a display, numeración y divisores; no a párrafos, formularios ni normativa.
-5. **Oscuro prioritario, paridad clara.** Ambos temas mantienen jerarquía, contraste, estados y funcionalidad.
-6. **Privacidad visible.** Una ubicación no verificada o sensible nunca se vuelve precisa por tratamiento visual.
+1. **Decision before decoration.** The first reading must always be when, where in a non-sensitive manner, how, safety, and confidence.
+2. **Three signals, three treatments.** Score, confidence, and safety do not share a gauge or an exclusive color. Safety can invalidate a favorable window.
+3. **Honest telemetry.** Technical aesthetics do not imply real precision. Mock data is persistently labeled as simulated or demonstration data.
+4. **Pixel as an accent.** Apply it to display text, numbering, and dividers; not to paragraphs, forms, or regulations.
+5. **Dark-first, light parity.** Both themes retain hierarchy, contrast, states, and functionality.
+6. **Visible privacy.** An unverified or sensitive location never becomes precise through visual treatment.
 
-### Tokens `proposed`
+### `proposed` tokens
 
-- **Color semántico:** `canvas`, `surface`, `surface-raised`, `text`, `text-muted`, `border`, `action`, `info`, `positive`, `caution`, `danger`, `focus`; las semillas de “Terminal atlántico equilibrado” son punto de partida, no nombres de dominio codificados.
-- **Tipografía:** Geist Sans 16 px/1.5 como base orientativa; Geist Mono con cifras tabulares para valores; Geist Pixel limitado a una línea corta y tamaños de display. Cargar solo pesos y subconjuntos realmente usados y ofrecer fallbacks del sistema.
-- **Geometría:** radio global cercano a 6 px, controles a 4 px y cortes rectos en módulos identificadores; los estados no cambian drásticamente de geometría si eso altera el layout.
-- **Borde y elevación:** borde técnico de 1 px; tres superficies como máximo; sombras solo para jerarquía temporal. El foco no se sustituye por sombra ambiental.
-- **Espaciado:** escala 4/8/12/16/20/24/32/48; área táctil objetivo de 44 × 44 CSS px para acciones frecuentes o críticas.
-- **Iconografía:** Lucide bajo ISC, tamaño óptico consistente de 18/20/24 px, texto visible en acciones críticas y `aria-hidden` para decoración.
-- **Movimiento:** duraciones 120/180/240 ms; propiedades de transform/opacidad cuando proceda; sin bucles decorativos; reducir o eliminar movimiento al solicitarlo el sistema.
+- **Semantic color:** `canvas`, `surface`, `surface-raised`, `text`, `text-muted`, `border`, `action`, `info`, `positive`, `caution`, `danger`, `focus`; the “Balanced Atlantic terminal” seeds are a starting point, not encoded domain names.
+- **Typography:** Geist Sans 16 px/1.5 as an indicative base; Geist Mono with tabular figures for values; Geist Pixel limited to a short line and display sizes. Load only the weights and subsets actually used and provide system fallbacks.
+- **Geometry:** global radius near 6 px, controls at 4 px, and square cuts on identifying modules; states do not change geometry dramatically if that would shift layout.
+- **Border and elevation:** 1 px technical border; no more than three surfaces; shadows only for temporary hierarchy. Focus is not replaced by ambient shadow.
+- **Spacing:** 4/8/12/16/20/24/32/48 scale; touch-target goal of 44 × 44 CSS px for frequent or critical actions.
+- **Iconography:** ISC-licensed Lucide, consistent optical sizes of 18/20/24 px, visible text on critical actions, and `aria-hidden` for decoration.
+- **Motion:** 120/180/240 ms durations; transform/opacity properties when appropriate; no decorative loops; reduce or remove motion when requested by the system.
 
-### Componentes prioritarios
+### Priority components
 
-- **Tarjeta de oportunidad:** spot de demostración, ventana, modalidad, score no probabilístico, confianza y estado de seguridad; etiqueta mock persistente.
-- **Selector temporal de 72 h:** lectura horizontal breve con alternativa reflow; no depender de arrastre ni de color.
-- **Detalle de ventana:** factores favorables y desfavorables, procedencia/versión visible o recuperable y limitaciones.
-- **Puerta de seguridad:** bloque independiente capaz de invalidar; texto directo, icono y estado semántico. Nunca una garantía.
-- **Confianza:** nivel y explicación de frescura/completitud simuladas, visualmente distinto del score.
-- **Registro de sesión:** permite captura o bolo, esfuerzo y feedback sin premiar visualmente solo el éxito.
-- **Navegación:** mínima para el vertical; jerarquía móvil clara antes de introducir un dashboard persistente.
+- **Opportunity card:** demonstration spot, window, method, non-probabilistic score, confidence, and safety status; persistent mock label.
+- **72 h time selector:** concise horizontal reading with a reflow alternative; does not depend on dragging or color.
+- **Window details:** favorable and unfavorable factors, visible or retrievable provenance/version, and limitations.
+- **Safety gate:** independent block capable of invalidating a window; direct text, icon, and semantic state. Never a guarantee.
+- **Confidence:** level and explanation of simulated freshness/completeness, visually distinct from the score.
+- **Session recording:** supports a catch or blank session, effort, and feedback without visually rewarding only success.
+- **Navigation:** minimal for the vertical slice; clear mobile hierarchy before introducing a persistent dashboard.
 
-### Comportamiento responsive
+### Responsive behavior
 
-- **Móvil:** una columna, oportunidad como unidad principal, prioridad a seguridad y próxima ventana, acciones frecuentes alcanzables con el pulgar y ningún contenido esencial solo al hover.
-- **Tablet:** lista y detalle pueden convivir si el ancho real lo permite; evitar asumir orientación horizontal.
-- **Escritorio:** composición lista-detalle o paneles, con ancho de lectura limitado para explicaciones. Más espacio no justifica más datos.
-- **Reflow:** probar 320 CSS px equivalentes y zoom del 200 % sin pérdida de contenido o función; las tablas densas deben transformarse o desplazarse con nombre/contexto conservados.
-- **Exterior:** validar brillo, reflejos, guantes o manos húmedas como contexto de investigación; no afirmar que una paleta funciona en costa sin pruebas.
+- **Mobile:** one column, opportunity as the primary unit, priority given to safety and the next window, frequent actions within thumb reach, and no essential content available only on hover.
+- **Tablet:** list and detail may coexist if the actual width permits; do not assume landscape orientation.
+- **Desktop:** list-detail or panel composition, with constrained reading width for explanations. More space does not justify more data.
+- **Reflow:** test at an equivalent 320 CSS px and 200% zoom without loss of content or function; dense tables must transform or scroll while retaining their name/context.
+- **Outdoors:** validate brightness, glare, gloves, or wet hands as research context; do not claim that a palette works on the coast without testing.
 
-### Accesibilidad mínima propuesta
+### Proposed minimum accessibility
 
-- Objetivo WCAG 2.2 AA, sujeto a auditoría; texto normal al menos 4.5:1, texto grande y límites/estados no textuales al menos 3:1 cuando aplique.
-- Navegación completa por teclado, foco visible y no oculto por barras o paneles fijos.
-- Áreas táctiles de 44 × 44 CSS px como objetivo interno para acciones frecuentes; nunca bajar del criterio AA de 24 × 24 sin cumplir sus excepciones de espaciado.
-- Estados expresados con texto, icono/forma y color; no convertir el score en la única explicación.
-- Orden semántico estable, encabezados descriptivos, etiquetas de formulario y anuncios prudentes para cambios importantes.
-- Respeto a `prefers-reduced-motion`, zoom, reflow, tamaño de texto y temas de alto contraste cuando sea viable.
-- Pruebas manuales con teclado y lectores de pantalla, además de automatización. La base Reka/Nuxt UI no reemplaza estas pruebas.
+- Target WCAG 2.2 AA, subject to audit; normal text at least 4.5:1, large text and non-text boundaries/states at least 3:1 where applicable.
+- Complete keyboard navigation with visible focus not obscured by fixed bars or panels.
+- Touch areas of 44 × 44 CSS px as an internal goal for frequent actions; never go below the AA criterion of 24 × 24 without meeting its spacing exceptions.
+- States expressed with text, icon/shape, and color; do not make the score the sole explanation.
+- Stable semantic order, descriptive headings, form labels, and restrained announcements for important changes.
+- Respect `prefers-reduced-motion`, zoom, reflow, text size, and high-contrast themes when feasible.
+- Manual testing with keyboard and screen readers in addition to automation. The Reka/Nuxt UI foundation does not replace these tests.
 
-## Riesgos, supuestos y puntos pendientes
+## Risks, assumptions, and pending points
 
-- `needs-validation`: Nuxt UI permite lograr suficiente carácter propio sin una acumulación frágil de overrides.
-- `needs-validation`: la proporción 80/20 resulta sofisticada para usuarios reales y no parece arcade, infantil o derivativa.
-- `needs-validation`: Geist Pixel mantiene legibilidad en los tamaños, idiomas y dispositivos previstos; si no, debe eliminarse sin afectar jerarquía.
-- `needs-validation`: los tokens claros y oscuros cumplen contraste en todos los estados, no solo en los pares base calculados.
-- `needs-validation`: la densidad funciona en móvil exterior y en lectura prolongada de explicaciones.
-- `needs-validation`: el patrón de score no se interpreta como probabilidad y la puerta de seguridad domina incluso ante un score alto.
-- `needs-validation`: SSR, hidratación, teleports, carga de fuentes y árbol de dependencias con versiones fijadas.
-- `needs-validation`: presupuesto medido de CSS, JavaScript, fuentes, renderizado e interacción; no hay benchmark de producto todavía.
-- `needs-validation`: coste y condiciones actuales de cualquier dependencia antes de instalarla, especialmente PrimeVue 5/PrimeUI.
-- **Supuesto:** el primer vertical usa contenido mock claramente etiquetado y no requiere mapas avanzados.
-- **Riesgo de mantenimiento:** mezclar primitivas o construir una capa headless completa antes de validar el flujo.
-- **Riesgo legal/IP:** interpretar “Atari” como permiso para imitar activos reconocibles. La propuesta prohíbe esa imitación.
+- `needs-validation`: Nuxt UI allows sufficient distinctiveness without a fragile accumulation of overrides.
+- `needs-validation`: the 80/20 ratio appears sophisticated to real users and not arcade-like, childish, or derivative.
+- `needs-validation`: Geist Pixel remains legible at the planned sizes, languages, and devices; otherwise, it must be removed without affecting hierarchy.
+- `needs-validation`: light and dark tokens meet contrast requirements in every state, not only in the calculated base pairs.
+- `needs-validation`: density works on mobile devices outdoors and for extended reading of explanations.
+- `needs-validation`: the score pattern is not interpreted as a probability, and the safety gate dominates even with a high score.
+- `needs-validation`: SSR, hydration, teleports, font loading, and dependency tree with pinned versions.
+- `needs-validation`: measured CSS, JavaScript, font, rendering, and interaction budget; no product benchmark exists yet.
+- `needs-validation`: current cost and terms of every dependency before installation, especially PrimeVue 5/PrimeUI.
+- **Assumption:** the first vertical slice uses clearly labeled mock content and does not require advanced maps.
+- **Maintenance risk:** mixing primitives or building a complete headless layer before validating the flow.
+- **Legal/IP risk:** interpreting “Atari” as permission to imitate recognizable assets. The proposal prohibits such imitation.
 
-## Plan técnico futuro, sujeto a especificación aprobada
+## Future technical plan, subject to an approved specification
 
-1. Definir tokens semánticos de color, tipografía, espaciado, geometría, elevación y movimiento sin acoplarlos a una biblioteca.
-2. Fijar versiones y registrar licencias de Nuxt UI, Tailwind, Reka, Lucide y fuentes.
-3. Crear un *spike* desechable de las cuatro piezas críticas: tarjeta, detalle, puerta de seguridad y formulario de sesión/bolo.
-4. Probar tema oscuro y claro, 320 px, 200 % de zoom, teclado, foco, lector de pantalla y movimiento reducido.
-5. Medir el artefacto construido: CSS, JavaScript, fuentes, hidratación y tiempos de interacción en dispositivos representativos.
-6. Evaluar con usuarios la comprensión de score/confianza/seguridad y la intensidad visual.
-7. Documentar la decisión resultante en una especificación/ADR si afecta significativamente a la arquitectura.
-8. Implementar en vertical slices únicamente después de aprobar la especificación correspondiente.
+1. Define semantic color, typography, spacing, geometry, elevation, and motion tokens without coupling them to a library.
+2. Pin versions and record licenses for Nuxt UI, Tailwind, Reka, Lucide, and fonts.
+3. Create a disposable *spike* of the four critical pieces: card, detail, safety gate, and session/blank-session form.
+4. Test dark and light themes, 320 px, 200% zoom, keyboard, focus, screen reader, and reduced motion.
+5. Measure the built artifact: CSS, JavaScript, fonts, hydration, and interaction times on representative devices.
+6. Evaluate users' understanding of score/confidence/safety and the visual intensity.
+7. Document the resulting decision in a specification/ADR if it significantly affects the architecture.
+8. Implement in vertical slices only after approving the corresponding specification.
 
-## Pruebas derivadas de los criterios
+## Tests derived from the criteria
 
-- **Diferenciación:** comparación ciega entre defaults de Nuxt UI y el spike; comprobar que paleta, tipografía, geometría y composición son propias sin referencias retro copiadas.
-- **Comprensión:** pedir a participantes que expliquen score, confianza y seguridad, incluida una ventana favorable invalidada.
-- **Responsive:** recorrer los flujos a 320, 768, 1024 y 1440 CSS px, en ambas orientaciones cuando proceda y con zoom al 200 %.
-- **Accesibilidad automatizada:** ejecutar reglas WCAG sobre ambos temas y cada estado, sabiendo que no cubren toda la conformidad.
-- **Accesibilidad manual:** teclado, foco, nombres/roles/estados, VoiceOver y al menos otro lector de pantalla representativo.
-- **Contraste:** verificar cada combinación efectiva, incluidos disabled, hover, focus, overlays, gráficos y semitransparencias.
-- **Movimiento:** confirmar paridad funcional con `prefers-reduced-motion: reduce` y ausencia de animación esencial.
-- **Rendimiento:** medir producción con imports reales y fuentes subconjuntadas; comparar contra un presupuesto acordado, no contra marketing de proveedores.
-- **Licencias:** inventariar paquete, versión, licencia, atribución y obligación antes de integrar.
-- **Contenido:** comprobar que todos los datos simulados llevan etiqueta persistente y que no aparecen coordenadas sensibles o no verificadas.
+- **Differentiation:** blind comparison between Nuxt UI defaults and the spike; verify that palette, typography, geometry, and composition are distinctive without copied retro references.
+- **Comprehension:** ask participants to explain score, confidence, and safety, including a favorable window that has been invalidated.
+- **Responsive:** follow the flows at 320, 768, 1024, and 1440 CSS px, in both orientations when applicable and at 200% zoom.
+- **Automated accessibility:** run WCAG rules against both themes and every state, recognizing that they do not cover full conformance.
+- **Manual accessibility:** keyboard, focus, names/roles/states, VoiceOver, and at least one other representative screen reader.
+- **Contrast:** verify every effective combination, including disabled, hover, focus, overlays, graphics, and semitransparency.
+- **Motion:** confirm functional parity with `prefers-reduced-motion: reduce` and the absence of essential animation.
+- **Performance:** measure production output with actual imports and subsetted fonts; compare against an agreed budget, not vendor marketing.
+- **Licenses:** inventory package, version, license, attribution, and obligations before integration.
+- **Content:** verify that all simulated data has a persistent label and that no sensitive or unverified coordinates appear.
 
-## Fuentes primarias y oficiales
+## Primary and official sources
 
-Todas fueron consultadas el **2026-09-04**. Las cifras de componentes, versiones y características pertenecen a ese momento y pueden cambiar.
+All were consulted on **2026-09-04**. Component counts, versions, and features reflect that date and may change.
 
-### Bibliotecas
+### Libraries
 
-- [UnoCSS — Why UnoCSS](https://unocss.dev/guide/why): arquitectura bajo demanda, extensibilidad y diferencias declaradas frente a otros motores; fuente oficial, sin adoptar sus afirmaciones de rendimiento como benchmark.
-- [UnoCSS — módulo Nuxt](https://unocss.dev/integrations/nuxt): instalación, configuración y matriz de soporte oficial.
-- [UnoCSS — repositorio y licencia](https://github.com/unocss/unocss): código y licencia MIT; la versión publicada consultada fue 66.10.0.
-- [Reka UI — introducción](https://reka-ui.com/docs/overview/introduction): alcance headless, personalización, tipado y tree-shaking declarados.
-- [Reka UI — accesibilidad](https://reka-ui.com/docs/overview/accessibility): WAI-ARIA, teclado, foco y responsabilidad de etiquetado.
-- [Reka UI — instalación Nuxt](https://www.reka-ui.com/docs/overview/installation): módulo y autoimportación oficiales; versión publicada consultada 2.10.4.
-- [Reka UI — SSR](https://www.reka-ui.com/docs/guides/server-side-rendering): soporte SSR y contexto de hidratación en versiones antiguas de Vue.
-- [Reka UI — repositorio](https://github.com/unovue/reka-ui): continuidad de Radix Vue y licencia MIT.
-- [Nuxt UI — introducción](https://ui.nuxt.com/docs/getting-started): tecnologías base, componentes, accesibilidad, personalización, color mode y licencia MIT.
-- [Nuxt UI — componentes](https://ui.nuxt.com/docs/components): catálogo y patrones responsive declarados; versión publicada consultada 4.11.0.
-- [PrimeVue — modo unstyled](https://primevue.dev/theming/unstyled/): separación de estilos y comportamiento en la versión vigente.
-- [PrimeVue — Nuxt](https://primevue.dev/nuxt): módulo oficial, autoimportación, tree-shaking y requisito de clave PrimeUI.
-- [PrimeVue — accesibilidad](https://primevue.dev/guides/accessibility/): guía general y remisión al detalle por componente.
-- [PrimeVue — paquete npm](https://www.npmjs.com/package/primevue): versión vigente 5.0.1 y licencia declarada como PrimeUI, no MIT.
-- [PrimeUI — licencia Community](https://primeui.dev/eula/community): criterios, clave, renovación y límites vigentes; requiere revisión profesional si se considera adoptar.
-- [PrimeVue 4 — repositorio archivado](https://github.com/primefaces/primevue): continuidad histórica y confirmación de que versiones MIT previas permanecen MIT.
-- [Ark UI — acerca de](https://ark-ui.com/docs/overview/about): alcance, frameworks, arquitectura Zag.js y licencia MIT.
-- [Ark UI — Select](https://ark-ui.com/docs/components/select): ejemplo oficial de patrón WAI-ARIA y teclado.
-- [Ark UI — changelog](https://ark-ui.com/docs/overview/changelog): actividad y correcciones recientes de SSR/accesibilidad; versión Vue consultada 5.39.1.
-- [Ark UI — repositorio](https://github.com/chakra-ui/ark): mantenimiento, paquetes y licencia MIT.
+- [UnoCSS — Why UnoCSS](https://unocss.dev/guide/why): on-demand architecture, extensibility, and stated differences from other engines; official source, without adopting its performance claims as benchmarks.
+- [UnoCSS — Nuxt module](https://unocss.dev/integrations/nuxt): official installation, configuration, and support matrix.
+- [UnoCSS — repository and license](https://github.com/unocss/unocss): code and MIT license; consulted published version was 66.10.0.
+- [Reka UI — introduction](https://reka-ui.com/docs/overview/introduction): stated headless scope, customization, typing, and tree-shaking.
+- [Reka UI — accessibility](https://reka-ui.com/docs/overview/accessibility): WAI-ARIA, keyboard, focus, and labeling responsibility.
+- [Reka UI — Nuxt installation](https://www.reka-ui.com/docs/overview/installation): official module and auto-imports; consulted published version 2.10.4.
+- [Reka UI — SSR](https://www.reka-ui.com/docs/guides/server-side-rendering): SSR support and hydration context in older Vue versions.
+- [Reka UI — repository](https://github.com/unovue/reka-ui): continuity from Radix Vue and MIT license.
+- [Nuxt UI — introduction](https://ui.nuxt.com/docs/getting-started): base technologies, components, accessibility, customization, color mode, and MIT license.
+- [Nuxt UI — components](https://ui.nuxt.com/docs/components): catalog and stated responsive patterns; consulted published version 4.11.0.
+- [PrimeVue — unstyled mode](https://primevue.dev/theming/unstyled/): separation of styling and behavior in the current version.
+- [PrimeVue — Nuxt](https://primevue.dev/nuxt): official module, auto-imports, tree-shaking, and PrimeUI key requirement.
+- [PrimeVue — accessibility](https://primevue.dev/guides/accessibility/): general guide and references to component-level details.
+- [PrimeVue — npm package](https://www.npmjs.com/package/primevue): current version 5.0.1 and declared PrimeUI license, not MIT.
+- [PrimeUI — Community license](https://primeui.dev/eula/community): current criteria, key, renewal, and limits; requires professional review if adoption is considered.
+- [PrimeVue 4 — archived repository](https://github.com/primefaces/primevue): historical continuity and confirmation that previous MIT versions remain MIT.
+- [Ark UI — about](https://ark-ui.com/docs/overview/about): scope, frameworks, Zag.js architecture, and MIT license.
+- [Ark UI — Select](https://ark-ui.com/docs/components/select): official example of a WAI-ARIA and keyboard pattern.
+- [Ark UI — changelog](https://ark-ui.com/docs/overview/changelog): recent activity and SSR/accessibility fixes; consulted Vue version 5.39.1.
+- [Ark UI — repository](https://github.com/chakra-ui/ark): maintenance, packages, and MIT license.
 
-### Accesibilidad y activos visuales
+### Accessibility and visual assets
 
-- [W3C — WCAG 2.2](https://www.w3.org/TR/WCAG22/): requisitos normativos de contraste, reflow, teclado, foco, movimiento y tamaño de objetivo.
-- [W3C — Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum): interpretación oficial del mínimo AA de 24 × 24 CSS px y sus excepciones.
-- [W3C — Target Size (Enhanced)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html): referencia para el objetivo interno de 44 × 44 CSS px.
-- [Vercel — repositorio Geist](https://github.com/vercel/geist-font): Geist Sans, Mono y Pixel; licencia SIL OFL 1.1; versión publicada visible en la consulta 1.7.1.
-- [Vercel — introducción de Geist Pixel](https://vercel.com/blog/introducing-geist-pixel): propósito de display y variantes; referencia estética, no licencia separada.
-- [Braille Institute — Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont): familia orientada a legibilidad, variantes Next y Mono; licencia de fuente incluida por el editor.
-- [Google Fonts — Atkinson Hyperlegible Next](https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegiblenext): archivos distribuidos y texto SIL OFL 1.1 de la variante propuesta.
-- [Lucide — repositorio](https://github.com/lucide-icons/lucide): iconos y licencia ISC.
+- [W3C — WCAG 2.2](https://www.w3.org/TR/WCAG22/): normative contrast, reflow, keyboard, focus, motion, and target-size requirements.
+- [W3C — Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum): official interpretation of the 24 × 24 CSS px AA minimum and its exceptions.
+- [W3C — Target Size (Enhanced)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html): reference for the internal 44 × 44 CSS px goal.
+- [Vercel — Geist repository](https://github.com/vercel/geist-font): Geist Sans, Mono, and Pixel; SIL OFL 1.1 license; published version visible at consultation was 1.7.1.
+- [Vercel — introducing Geist Pixel](https://vercel.com/blog/introducing-geist-pixel): display purpose and variants; aesthetic reference, not a separate license.
+- [Braille Institute — Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont): family designed for legibility, Next and Mono variants; font license included by the publisher.
+- [Google Fonts — Atkinson Hyperlegible Next](https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegiblenext): distributed files and SIL OFL 1.1 text for the proposed variant.
+- [Lucide — repository](https://github.com/lucide-icons/lucide): icons and ISC license.
 
-## Resultado de la investigación
+## Research outcome
 
-La dirección inicial queda **`proposed`**, no `decided`: **Terminal atlántico equilibrado sobre Nuxt UI v4**, con tokens propios, Geist Sans/Mono y Geist Pixel como acento muy limitado, Lucide como base iconográfica, oscuro prioritario con claro completo, y movimiento técnico breve. El siguiente paso no es instalar la biblioteca, sino aprobar una especificación de spike y validar comprensión, diferenciación, accesibilidad, responsive, rendimiento y licencias con versiones fijadas.
+The initial direction remains **`proposed`**, not `decided`: **Balanced Atlantic terminal on Nuxt UI v4**, with custom tokens, Geist Sans/Mono and Geist Pixel as a very limited accent, Lucide as the iconographic foundation, dark-first with a complete light theme, and brief technical motion. The next step is not to install the library, but to approve a spike specification and validate comprehension, differentiation, accessibility, responsive behavior, performance, and licensing with pinned versions.

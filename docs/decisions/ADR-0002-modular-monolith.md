@@ -1,27 +1,26 @@
-# ADR-0002: monolito modular
+# ADR-0002: modular monolith
 
-- **Estado:** `decided` como dirección; implementación no iniciada.
-- **Fecha:** 2026-09-02.
+- **Status:** `decided` as a direction; implementation not started.
+- **Date:** 2026-09-02.
 
-## Contexto
+## Context
 
-El producto debe validar primero una decisión pesquera completa y local. Distribuir prematuramente spots, condiciones, scoring, recomendaciones, sesiones y feedback elevaría la complejidad operativa y dificultaría cambiar límites todavía inmaduros.
+The product must first validate a complete, local fishing decision. Prematurely distributing spots, conditions, scoring, recommendations, sessions, and feedback would increase operational complexity and make it harder to change boundaries that are still immature.
 
-## Decisión
+## Decision
 
-Construir la primera aplicación como monolito modular, con separación ligera entre dominio, aplicación, infraestructura y API.
+Build the first application as a modular monolith, with lightweight separation between domain, application, infrastructure, and API.
 
-Los módulos previstos son `spots`, `conditions`, `scoring`, `recommendations`, `sessions` y `feedback`. Los proveedores externos quedarán detrás de interfaces y OpenAPI será el contrato previsto entre frontend y backend.
+The planned modules are `spots`, `conditions`, `scoring`, `recommendations`, `sessions`, and `feedback`. External providers will remain behind interfaces, and OpenAPI will be the planned contract between frontend and backend.
 
-## Consecuencias
+## Consequences
 
-- Despliegue y desarrollo conceptualmente simples durante la validación.
-- Límites de módulo explícitos sin coste de una arquitectura distribuida.
-- Transacciones y evaluación transversal más sencillas al inicio.
-- Será necesario vigilar dependencias entre módulos y evitar un monolito sin límites.
+- Conceptually simple deployment and development during validation.
+- Explicit module boundaries without the cost of a distributed architecture.
+- Simpler transactions and cross-cutting evaluation at the outset.
+- Dependencies between modules will need to be monitored to avoid a monolith without boundaries.
 
-## Alternativas consideradas
+## Alternatives considered
 
-- Microservicios desde el inicio: descartados por complejidad prematura.
-- Aplicación sin límites modulares: descartada porque dificultaría aislar dominio, proveedores y evolución del scoring.
-
+- Microservices from the outset: rejected due to premature complexity.
+- Application without modular boundaries: rejected because it would make it harder to isolate the domain, providers, and scoring evolution.

@@ -1,12 +1,16 @@
-# Changelog documental
+# Documentation changelog
 
-Registra cambios relevantes de producto, arquitectura, investigación y especificaciones. No sustituye al historial de Git.
+Records significant product, architecture, research, and specification changes. It does not replace the Git history.
+
+## 2026-09-04
+
+- `decided`: established English as the canonical language across the existing documentation; this language-only migration does not implement the product or change its scope.
 
 ## 2026-09-02
 
-- `decided`: añadida al README una presentación bilingüe y el concepto visual provisional del producto.
-- `decided`: aceptada la especificación 001 como contrato documental del primer vertical slice; implementación no iniciada.
-- `decided`: creada la base documental inicial de `alerts.fishing`.
-- `decided`: registrados visión, principios, alcance, arquitectura prevista, roadmap y ADR iniciales.
-- `decided`: documentada la especificación del primer vertical slice con datos mock.
-- `needs-validation`: registradas fuentes de investigación sin afirmar integración técnica.
+- `decided`: added a bilingual introduction and the provisional product visual concept to the README.
+- `decided`: accepted specification 001 as the documentary contract for the first vertical slice; implementation not started.
+- `decided`: created the initial documentation foundation for `alerts.fishing`.
+- `decided`: recorded the vision, principles, scope, planned architecture, roadmap, and initial ADRs.
+- `decided`: documented the first vertical slice specification with mock data.
+- `needs-validation`: recorded research sources without claiming technical integration.

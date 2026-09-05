@@ -1,106 +1,106 @@
-# Especificación 001: oportunidad de pesca MVP
+# Specification 001: fishing opportunity MVP
 
-**Estado: `decided`. Implementación: no iniciada.**
+**Status: `decided`. Implementation: not started.**
 
-La especificación queda aceptada como contrato documental del primer vertical slice. Su cierre documental no implica que los criterios de aceptación estén cumplidos ni que exista una implementación.
+The specification is accepted as the documentary contract for the first vertical slice. Its documentary completion does not imply that the acceptance criteria have been met or that an implementation exists.
 
-## Problema
+## Problem
 
-La meteorología genérica obliga al pescador a interpretar variables dispersas sin contexto suficiente del spot. Falta una decisión local que explique potencial, calidad de datos y restricciones de seguridad, y que pueda evaluarse después de la sesión.
+Generic weather information forces anglers to interpret scattered variables without sufficient spot context. What is missing is a local decision that explains potential, data quality, and safety restrictions and can be evaluated after the session.
 
-## Usuario
+## User
 
-Pescador de lubina europea que practica spinning desde costa en Rías Baixas y quiere decidir si, dónde y cuándo organizar una sesión durante las próximas 72 horas.
+An angler targeting European seabass by shore spinning in Rías Baixas who wants to decide whether, where, and when to organize a session during the next 72 hours.
 
-## Historia principal
+## Main story
 
-Como pescador, quiero comparar oportunidades de demostración para mis spots dentro de las próximas 72 horas, entender por qué se recomiendan y con qué confianza, comprobar si son seguras y registrar después el resultado, incluso si no capturo nada.
+As an angler, I want to compare demonstration opportunities for my spots within the next 72 hours, understand why they are recommended and with what confidence, check whether they are safe, and then record the outcome even if I catch nothing.
 
-## Alcance
+## Scope
 
-- Aguete, Praia do Santo (Seixo) y Placeres/Lourizán como spots de demostración.
-- Lubina europea y spinning desde costa.
-- Horizonte de 72 horas.
-- Datos mock inequívocamente etiquetados.
-- Score de 0 a 100 con factores positivos y negativos.
-- Confianza independiente con explicación de frescura y completitud simuladas.
-- Puerta de seguridad separada, capaz de invalidar una ventana.
-- Recomendación sobre dónde, cuándo y cómo pescar sin prometer capturas.
-- Registro posterior de sesión, cero o más capturas y feedback.
+- Aguete, Praia do Santo (Seixo), and Placeres/Lourizán as demonstration spots.
+- European seabass and shore spinning.
+- 72-hour horizon.
+- Unambiguously labeled mock data.
+- Score from 0 to 100 with positive and negative factors.
+- Independent confidence with an explanation of simulated freshness and completeness.
+- Separate safety gate capable of invalidating a window.
+- Recommendation about where, when, and how to fish without promising catches.
+- Subsequent recording of a session, zero or more catches, and feedback.
 
-## Fuera de alcance
+## Out of scope
 
-- Datos meteorológicos u oceanográficos reales.
-- Coordenadas o condiciones locales no verificadas presentadas como hechos.
-- Autenticación, pagos, mapas avanzados y Telegram.
-- YouTube API, red social y ubicación en tiempo real.
-- Machine learning, LLM y agentes.
-- Aplicación iOS.
-- Asesoramiento legal o garantía de seguridad.
+- Real weather or oceanographic data.
+- Unverified coordinates or local conditions presented as facts.
+- Authentication, payments, advanced maps, and Telegram.
+- YouTube API, social network, and real-time location.
+- Machine learning, LLMs, and agents.
+- iOS application.
+- Legal advice or safety guarantees.
 
-## Modelo conceptual
+## Conceptual model
 
-- **Spot:** identidad de demostración y contexto etiquetado como mock cuando no esté verificado.
-- **Ventana:** intervalo futuro dentro de 72 horas.
-- **Condiciones mock:** factores simulados con frescura y completitud declaradas.
-- **Score:** valoración de 0 a 100, versión y explicación; no es probabilidad.
-- **Confianza:** evaluación separada de calidad de datos.
-- **Seguridad:** estado independiente: permitido para demostración, precaución o invalidado.
-- **Recomendación:** composición de spot, ventana, especie, técnica, score, confianza, seguridad y explicación.
-- **Sesión:** actividad realizada o registrada, vinculada opcionalmente a una recomendación.
-- **Resultado:** cero o más capturas; cero capturas constituye un bolo válido.
-- **Feedback:** valoración de utilidad de la decisión y de la explicación.
+- **Spot:** demonstration identity and context labeled as mock when unverified.
+- **Window:** future interval within 72 hours.
+- **Mock conditions:** simulated factors with declared freshness and completeness.
+- **Score:** rating from 0 to 100, version, and explanation; it is not a probability.
+- **Confidence:** separate assessment of data quality.
+- **Safety:** independent status: permitted for demonstration, caution, or invalidated.
+- **Recommendation:** composition of spot, window, species, technique, score, confidence, safety, and explanation.
+- **Session:** completed or recorded activity, optionally linked to a recommendation.
+- **Outcome:** zero or more catches; zero catches constitutes a valid blank session.
+- **Feedback:** assessment of the usefulness of the decision and explanation.
 
-## Comportamiento esperado
+## Expected behavior
 
-1. La persona ve oportunidades mock de los tres spots durante 72 horas.
-2. Cada oportunidad separa score, confianza y seguridad.
-3. Al abrir una oportunidad ve factores positivos, negativos y limitaciones.
-4. Una ventana insegura aparece invalidada aunque tenga buen potencial pesquero.
-5. Ninguna recomendación promete capturas ni aparenta usar datos reales.
-6. Tras una salida, la persona registra si pescó, el resultado y la utilidad percibida.
-7. El sistema acepta y conserva una sesión sin capturas como información válida.
+1. The person sees mock opportunities for the three spots over 72 hours.
+2. Each opportunity separates score, confidence, and safety.
+3. Opening an opportunity displays positive factors, negative factors, and limitations.
+4. An unsafe window appears invalidated even if it has good fishing potential.
+5. No recommendation promises catches or appears to use real data.
+6. After an outing, the person records whether they fished, the outcome, and perceived usefulness.
+7. The system accepts and retains a session without catches as valid information.
 
-## Criterios de aceptación
+## Acceptance criteria
 
-- [ ] Se muestran exactamente los tres spots de demostración y la modalidad inicial.
-- [ ] El horizonte visible no supera 72 horas.
-- [ ] Todos los datos simulados se identifican como mock o demostración.
-- [ ] Cada oportunidad muestra score entre 0 y 100 sin llamarlo probabilidad.
-- [ ] Score y confianza aparecen como conceptos distintos.
-- [ ] Se explican al menos un factor favorable y uno desfavorable cuando existan en el escenario mock.
-- [ ] La versión del scoring de demostración es visible o recuperable.
-- [ ] Existe al menos un escenario donde seguridad invalida una ventana con score favorable.
-- [ ] La recomendación evita garantías de captura y certeza legal o de seguridad.
-- [ ] Puede registrarse una sesión vinculada a una recomendación.
-- [ ] Puede registrarse un bolo sin forzar una captura.
-- [ ] Puede registrarse feedback sobre decisión y explicación.
-- [ ] No se publica ubicación exacta en tiempo real.
+- [ ] Exactly the three demonstration spots and the initial method are displayed.
+- [ ] The visible horizon does not exceed 72 hours.
+- [ ] All simulated data is identified as mock or demonstration data.
+- [ ] Each opportunity displays a score between 0 and 100 without calling it a probability.
+- [ ] Score and confidence appear as separate concepts.
+- [ ] At least one favorable and one unfavorable factor are explained when they exist in the mock scenario.
+- [ ] The demonstration scoring version is visible or retrievable.
+- [ ] At least one scenario exists where safety invalidates a window with a favorable score.
+- [ ] The recommendation avoids guarantees of catches and legal or safety certainty.
+- [ ] A session linked to a recommendation can be recorded.
+- [ ] A blank session can be recorded without forcing a catch.
+- [ ] Feedback on the decision and explanation can be recorded.
+- [ ] Exact real-time location is not published.
 
-## Riesgos
+## Risks
 
-- Los datos mock podrían confundirse con información real.
-- Un score numérico podría interpretarse como probabilidad o promesa.
-- La demostración podría aparentar conocimiento no verificado de un spot.
-- Seguridad y normativa podrían percibirse como garantías.
-- Registrar solo sesiones exitosas sesgaría la evaluación.
-- Un diseño demasiado amplio impediría validar el recorrido principal.
+- Mock data could be mistaken for real information.
+- A numerical score could be interpreted as a probability or promise.
+- The demonstration could appear to have unverified knowledge of a spot.
+- Safety and regulatory information could be perceived as guarantees.
+- Recording only successful sessions would bias evaluation.
+- An overly broad design would prevent validation of the main journey.
 
-## Preguntas abiertas
+## Open questions
 
-- `needs-validation`: ¿qué factores mínimos hacen que la explicación sea útil?
-- `needs-validation`: ¿cómo expresar confianza sin falsa precisión?
-- `needs-validation`: ¿qué estados y mensajes de seguridad son comprensibles?
-- `needs-validation`: ¿qué datos mínimos de esfuerzo necesita una sesión?
-- `needs-validation`: ¿cómo medir una decisión considerada útil?
-- `needs-validation`: ¿qué representación no sensible y no engañosa usar para los spots?
+- `needs-validation`: what minimum factors make the explanation useful?
+- `needs-validation`: how can confidence be expressed without false precision?
+- `needs-validation`: which safety states and messages are understandable?
+- `needs-validation`: what minimum effort data does a session need?
+- `needs-validation`: how should a decision considered useful be measured?
+- `needs-validation`: what non-sensitive and non-misleading representation should be used for the spots?
 
-## Definición de hecho
+## Definition of done
 
-- Todos los criterios de aceptación aplicables están verificados.
-- El recorrido completo funciona con datos mock y sin integraciones externas.
-- Las diferencias entre score, confianza y seguridad son comprensibles.
-- Se ha probado una sesión con capturas y otra con bolo.
-- No se presentan datos, coordenadas, normativa o seguridad no verificadas como hechos.
-- La documentación, la especificación y el comportamiento están sincronizados.
-- Se han ejecutado las validaciones disponibles y actualizado el changelog.
+- All applicable acceptance criteria have been verified.
+- The complete journey works with mock data and without external integrations.
+- The differences between score, confidence, and safety are understandable.
+- One session with catches and one blank session have been tested.
+- Unverified data, coordinates, regulations, or safety information are not presented as facts.
+- The documentation, specification, and behavior are synchronized.
+- The available validations have been run and the changelog updated.

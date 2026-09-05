@@ -1,16 +1,15 @@
-# Principios de producto
+# Product principles
 
-**Estado: `decided`.**
+**Status: `decided`.**
 
-1. **Profundidad local antes que cobertura mundial.** Rías Baixas debe comprenderse con suficiente contexto antes de ampliar territorio.
-2. **Decisión antes que acumulación de datos.** Cada dato debe ayudar a decidir dónde, cuándo o cómo pescar.
-3. **Explicación antes que score mágico.** La valoración debe mostrar factores y límites, no esconderlos tras un número.
-4. **Confianza explícita.** El score de condiciones y la confianza en los datos son conceptos distintos.
-5. **Seguridad separada del potencial pesquero.** Una ventana favorable puede quedar invalidada por seguridad.
-6. **Aprender también de los bolos.** Una sesión sin capturas es información valiosa y debe poder registrarse.
-7. **Privacidad por defecto.** La ubicación exacta nunca será pública de forma predeterminada.
-8. **Fuentes y versiones.** Datos, reglas y scoring deben conservar procedencia, fecha o versión cuando corresponda.
-9. **Producto útil antes que arquitectura espectacular.** La complejidad técnica debe responder a resultados verificables.
-10. **Sin promesas de captura.** La recomendación orienta una decisión bajo incertidumbre.
-11. **Verificación antes que apariencia de certeza.** No se presentarán coordenadas, normativa, condiciones o datos no verificados como hechos.
-
+1. **Local depth before global coverage.** Rías Baixas must be understood with sufficient context before expanding the territory.
+2. **Decisions before data accumulation.** Every data point must help decide where, when, or how to fish.
+3. **Explanation before a magic score.** The rating must show factors and limitations, not hide them behind a number.
+4. **Explicit confidence.** The conditions score and confidence in the data are separate concepts.
+5. **Safety separate from fishing potential.** A favorable window may be invalidated on safety grounds.
+6. **Learn from blank sessions too.** A session without catches is valuable information and must be recordable.
+7. **Privacy by default.** Exact location will never be public by default.
+8. **Sources and versions.** Data, rules, and scoring must retain provenance, date, or version as appropriate.
+9. **A useful product before spectacular architecture.** Technical complexity must serve verifiable outcomes.
+10. **No catch promises.** A recommendation guides a decision under uncertainty.
+11. **Verification before an appearance of certainty.** Unverified coordinates, regulations, conditions, or data will not be presented as facts.

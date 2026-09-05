@@ -1,29 +1,28 @@
-# Investigación de contenido tutorial
+# Tutorial-content research
 
-**Estado: `future`; integración: `not-integrated`.**
+**Status: `future`; integration: `not-integrated`.**
 
-Los tutoriales podrían ayudar a traducir una recomendación en acciones sobre técnica, equipo y seguridad. Se incorporarán después del flujo inicial y mediante enlaces o reproductores oficiales.
+Tutorials could help translate a recommendation into actions involving technique, gear, and safety. They will be incorporated after the initial flow and through official links or players.
 
-## Fuente inicial
+## Initial source
 
-- **Nombre:** YouTube Data API — búsqueda.
+- **Name:** YouTube Data API — search.
 - **URL:** <https://developers.google.com/youtube/v3/docs/search/list>
-- **Finalidad potencial:** descubrir contenidos relevantes sobre lubina, spinning desde costa y contexto local.
-- **Estado:** `not-integrated`.
-- **Verificación previa:** licencia, atribución, términos, cuotas, privacidad, políticas de reproducción y estabilidad de resultados.
+- **Potential purpose:** discover relevant content about European seabass, shore spinning, and local context.
+- **Status:** `not-integrated`.
+- **Prior verification:** license, attribution, terms, quotas, privacy, playback policies, and result stability.
 
-## Criterios propuestos
+## Proposed criteria
 
-- relevancia para especie, técnica y condiciones explicadas;
-- autoría, fecha y señales de credibilidad visibles;
-- ausencia de prácticas inseguras, ilegales o dañinas;
-- no revelar spots sensibles ni presentar coordenadas no verificadas;
-- separar contenido editorial de recomendaciones calculadas;
-- permitir revisión y retirada si cambia el contenido o deja de ser válido.
+- relevance to the species, technique, and conditions explained;
+- visible authorship, date, and credibility signals;
+- absence of unsafe, illegal, or harmful practices;
+- no disclosure of sensitive spots or presentation of unverified coordinates;
+- separation of editorial content from calculated recommendations;
+- support for review and withdrawal if the content changes or is no longer valid.
 
-## Pendiente
+## Pending
 
-- `needs-validation`: proceso de selección y revisión editorial.
-- `needs-validation`: atribución y experiencia de reproducción admitida.
-- `needs-validation`: tratamiento de contenido patrocinado o con afirmaciones no verificables.
-
+- `needs-validation`: editorial selection and review process.
+- `needs-validation`: permitted attribution and playback experience.
+- `needs-validation`: handling sponsored content or unverifiable claims.

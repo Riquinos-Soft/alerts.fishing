@@ -1,24 +1,23 @@
-# ADR-0001: repositorio independiente
+# ADR-0001: independent repository
 
-- **Estado:** `decided`.
-- **Fecha:** 2026-09-02.
+- **Status:** `decided`.
+- **Date:** 2026-09-02.
 
-## Contexto
+## Context
 
-`alerts.fishing` necesita una fuente de verdad propia para visión, investigación, decisiones, arquitectura, especificaciones y progreso. Su dominio, evolución y documentación deben poder entenderse sin depender de otro producto.
+`alerts.fishing` needs its own source of truth for vision, research, decisions, architecture, specifications, and progress. Its domain, evolution, and documentation must be understandable without depending on another product.
 
-## Decisión
+## Decision
 
-Mantener `alerts.fishing` como repositorio completamente independiente y como vault de Obsidian legible también desde GitHub.
+Maintain `alerts.fishing` as a completely independent repository and as an Obsidian vault that is also readable on GitHub.
 
-## Consecuencias
+## Consequences
 
-- Toda decisión necesaria para comprender el producto se documenta aquí.
-- Los enlaces documentales son relativos y no requieren plugins de Obsidian.
-- Las referencias externas se identifican como fuentes o productos externos, nunca como funcionalidades internas ya disponibles.
-- El repositorio conserva su propio roadmap, especificaciones, ADR y changelog.
+- Every decision needed to understand the product is documented here.
+- Documentation links are relative and do not require Obsidian plugins.
+- External references are identified as sources or external products, never as internal features that are already available.
+- The repository maintains its own roadmap, specifications, ADRs, and changelog.
 
-## Límites
+## Boundaries
 
-Esta decisión no implica que exista una aplicación funcional. En el estado actual solo se prepara la documentación.
-
+This decision does not imply that a functional application exists. In the current state, only documentation is being prepared.

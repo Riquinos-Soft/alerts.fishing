@@ -1,43 +1,42 @@
-# Arquitectura prevista
+# Planned architecture
 
-**Estado general: `proposed`; implementación: no iniciada.**
+**Overall status: `proposed`; implementation: not started.**
 
-Esta página documenta una dirección técnica, no componentes ya construidos.
+This page documents a technical direction, not components that have already been built.
 
-## Enfoque
+## Approach
 
-- `decided`: monolito modular para evitar distribución prematura.
-- `proposed`: separación ligera entre dominio, aplicación, infraestructura y API.
-- `proposed`: proveedores externos detrás de interfaces sustituibles y observables.
-- `proposed`: OpenAPI como contrato entre web y backend.
-- `proposed`: scoring versionado para reproducir y evaluar recomendaciones.
-- `proposed`: PostgreSQL con PostGIS para información geográfica.
+- `decided`: modular monolith to avoid premature distribution.
+- `proposed`: lightweight separation between domain, application, infrastructure, and API.
+- `proposed`: external providers behind replaceable, observable interfaces.
+- `proposed`: OpenAPI as the contract between web and backend.
+- `proposed`: versioned scoring to reproduce and evaluate recommendations.
+- `proposed`: PostgreSQL with PostGIS for geographic information.
 
-## Módulos previstos
+## Planned modules
 
-- `spots`: contexto local, sensibilidad y representación geográfica.
-- `conditions`: condiciones ambientales, procedencia, frescura y completitud.
-- `scoring`: factores, versión y cálculo del potencial pesquero.
-- `recommendations`: composición de ventanas, explicaciones, confianza y puerta de seguridad.
-- `sessions`: sesiones, capturas y bolos.
-- `feedback`: utilidad percibida y evaluación posterior.
+- `spots`: local context, sensitivity, and geographic representation.
+- `conditions`: environmental conditions, provenance, freshness, and completeness.
+- `scoring`: factors, version, and fishing-potential calculation.
+- `recommendations`: composition of windows, explanations, confidence, and safety gate.
+- `sessions`: sessions, catches, and blank sessions.
+- `feedback`: perceived usefulness and subsequent evaluation.
 
-Véase el [mapa de dominio](domain-map.md).
+See the [domain map](domain-map.md).
 
-## Stack previsto
+## Planned stack
 
-- `proposed`: Nuxt, Vue y TypeScript.
-- `proposed`: Tailwind CSS, shadcn-vue y Lucide.
-- `proposed`: FastAPI y Python.
-- `proposed`: PostgreSQL con PostGIS.
-- `proposed`: Docker Compose para desarrollo local futuro.
+- `proposed`: Nuxt, Vue, and TypeScript.
+- `proposed`: Tailwind CSS, shadcn-vue, and Lucide.
+- `proposed`: FastAPI and Python.
+- `proposed`: PostgreSQL with PostGIS.
+- `proposed`: Docker Compose for future local development.
 - `proposed`: OpenAPI.
-- `proposed`: PWA inicialmente.
-- `future`: aplicación iOS posterior a la validación del producto.
+- `proposed`: PWA initially.
+- `future`: iOS application after product validation.
 
-Ninguno de estos elementos está implementado en el estado documental actual.
+None of these elements is implemented in the current documentary state.
 
-## Responsabilidades
+## Responsibilities
 
-La lógica determinista y verificable debe gobernar scoring, seguridad y reglas. Un LLM futuro podría coordinar o explicar, pero no será la única autoridad. La arquitectura deberá conservar fuente, versión y momento de los datos utilizados para una recomendación.
-
+Deterministic, verifiable logic must govern scoring, safety, and rules. A future LLM could coordinate or explain, but will not be the sole authority. The architecture must preserve the source, version, and time of the data used for a recommendation.

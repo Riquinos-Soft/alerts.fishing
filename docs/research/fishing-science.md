@@ -1,29 +1,28 @@
-# Investigación sobre pesca y condiciones
+# Research on fishing and conditions
 
-**Estado: `needs-validation`.**
+**Status: `needs-validation`.**
 
-## Pregunta central
+## Central question
 
-¿Qué factores ayudan a tomar una decisión útil para buscar lubina europea mediante spinning desde costa en Rías Baixas, y con qué nivel de evidencia?
+Which factors help people make a useful decision when targeting European seabass by shore spinning in Rías Baixas, and what level of evidence supports them?
 
-## Líneas de investigación
+## Research topics
 
-- relación entre estado de mar, oleaje, viento, marea, temperatura y comportamiento observado;
-- variación por spot, exposición, estructura, acceso y momento del día;
-- efecto de estación, presión de pesca y disponibilidad de alimento;
-- papel secundario de luna o solunar frente a condiciones locales;
-- influencia de técnica, señuelo, esfuerzo y experiencia del pescador;
-- sesgos introducidos al registrar solo capturas y excluir bolos.
+- relationship between sea state, waves, wind, tide, temperature, and observed behavior;
+- variation by spot, exposure, structure, access, and time of day;
+- effect of season, fishing pressure, and food availability;
+- secondary role of moon or solunar data compared with local conditions;
+- influence of technique, lure, effort, and angler experience;
+- biases introduced by recording only catches and excluding blank sessions.
 
-## Método documental
+## Documentation method
 
-1. Priorizar literatura científica, organismos oficiales y documentación metodológica.
-2. Registrar referencia, fecha, población o zona estudiada y limitaciones.
-3. Separar evidencia publicada, conocimiento local, hipótesis y decisión de producto.
-4. Evitar trasladar resultados de otra especie o región sin validación.
-5. Diseñar el registro de sesiones para capturar esfuerzo y resultados negativos, no solo éxito.
+1. Prioritize scientific literature, official bodies, and methodological documentation.
+2. Record the reference, date, population or area studied, and limitations.
+3. Separate published evidence, local knowledge, hypotheses, and product decisions.
+4. Avoid transferring results from another species or region without validation.
+5. Design session recording to capture effort and negative outcomes, not only success.
 
-## Estado actual
+## Current status
 
-No se ha validado todavía ningún peso ni relación causal para el scoring. No existe una fórmula científica aceptada por el proyecto. Las futuras hipótesis deberán reflejar incertidumbre y evaluarse por versión con resultados reales.
-
+No weight or causal relationship has yet been validated for scoring. The project has no accepted scientific formula. Future hypotheses must reflect uncertainty and be evaluated by version against real outcomes.

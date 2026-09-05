@@ -1,30 +1,29 @@
-# Análisis competitivo
+# Competitive analysis
 
-**Estado: `proposed`; comparaciones cuantitativas: `needs-validation`.**
+**Status: `proposed`; quantitative comparisons: `needs-validation`.**
 
-## Hipótesis estratégica
+## Strategic hypothesis
 
-Los productos generalistas suelen buscar amplitud de geografías, especies o datos. Esta observación es una hipótesis de categoría y deberá contrastarse con investigación actualizada antes de emplearla como afirmación comercial.
+General-purpose products tend to seek breadth across geographies, species, or data. This observation is a category hypothesis and must be checked against current research before being used as a commercial claim.
 
-`alerts.fishing` buscará diferenciarse mediante profundidad local en Rías Baixas: contexto del spot, recomendaciones explicables, confianza separada, sesiones completas, bolos y evaluación histórica.
+`alerts.fishing` will seek to differentiate itself through local depth in Rías Baixas: spot context, explainable recommendations, separate confidence, complete sessions, blank sessions, and historical evaluation.
 
-## Moat previsto
+## Planned moat
 
-La ventaja acumulativa propuesta es la combinación de:
+The proposed cumulative advantage combines:
 
-- contexto local verificable de cada spot;
-- sesiones completas, incluidas las que no producen capturas;
-- explicabilidad de los factores;
-- confianza de los datos;
-- evaluación histórica de recomendaciones y resultados.
+- verifiable local context for each spot;
+- complete sessions, including those with no catches;
+- explainability of factors;
+- data confidence;
+- historical evaluation of recommendations and outcomes.
 
-IA, mapas o una red social por sí solos no constituyen diferenciación suficiente.
+AI, maps, or a social network alone do not provide sufficient differentiation.
 
-## Referencias y límites
+## References and limitations
 
-- `not-integrated`: [Fishing Points](https://apps.apple.com/us/app/fishing-points-map-forecast/id1203032512) es una referencia inicial para estudiar la categoría, no una fuente de afirmaciones ya verificadas.
-- `needs-validation`: comparar alcance funcional, territorios, precios, uso y retención con fuentes vigentes.
-- `needs-validation`: documentar fecha y fuente de cualquier cifra antes de publicarla.
+- `not-integrated`: [Fishing Points](https://apps.apple.com/us/app/fishing-points-map-forecast/id1203032512) is an initial reference for studying the category, not a source of already verified claims.
+- `needs-validation`: compare feature scope, territories, pricing, usage, and retention using current sources.
+- `needs-validation`: document the date and source of any figure before publishing it.
 
-PescaREC y las fuentes oficiales se tratan como referencias externas; `alerts.fishing` no pretende sustituirlas.
-
+PescaREC and official sources are treated as external references; `alerts.fishing` does not seek to replace them.

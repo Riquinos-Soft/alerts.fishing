@@ -1,35 +1,34 @@
-# Nota de investigación: título
+# Research note: title
 
-- **Estado:** `needs-validation` | `validated` | `rejected`.
-- **Fecha de consulta:** AAAA-MM-DD.
-- **Área:** producto | datos | ciencia | normativa | seguridad | privacidad.
+- **Status:** `needs-validation` | `validated` | `rejected`.
+- **Consultation date:** YYYY-MM-DD.
+- **Area:** product | data | science | regulations | safety | privacy.
 
-## Pregunta
+## Question
 
-¿Qué se intenta averiguar?
+What are we trying to determine?
 
-## Fuente
+## Source
 
-- **Nombre:**
-- **URL o referencia:**
-- **Tipo:** oficial | científica | producto | comunidad | otra.
-- **Autoridad o autoría:**
-- **Fecha o versión:**
-- **Licencia, atribución y condiciones:** pendiente de verificar.
+- **Name:**
+- **URL or reference:**
+- **Type:** official | scientific | product | community | other.
+- **Authority or authorship:**
+- **Date or version:**
+- **License, attribution, and terms:** pending verification.
 
-## Hallazgos
+## Findings
 
-Resumen propio y breve. No copiar contenido extenso.
+Brief summary in your own words. Do not copy extensive content.
 
-## Limitaciones
+## Limitations
 
-Cobertura, vigencia, método, región, especie, técnica y posibles sesgos.
+Coverage, currency, method, region, species, technique, and possible biases.
 
-## Implicación para alerts.fishing
+## Implication for alerts.fishing
 
-Qué hipótesis, decisión o especificación podría cambiar. No convertir el hallazgo en decisión sin el proceso correspondiente.
+Which hypothesis, decision, or specification could change. Do not turn the finding into a decision without following the corresponding process.
 
-## Próximo paso
+## Next step
 
-Validación, contraste o decisión requerida.
-
+Required validation, comparison, or decision.

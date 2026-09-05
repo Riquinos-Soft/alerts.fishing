@@ -1,32 +1,31 @@
-# Agentes especializados futuros
+# Future specialized agents
 
-**Estado: `future`; fuera del MVP.**
+**Status: `future`; outside the MVP.**
 
-Los agentes de IA pertenecen a una fase futura posterior a la validación del producto y de sus flujos deterministas.
+AI agents belong to a future phase after validating the product and its deterministic workflows.
 
-## Propuesta de responsabilidades
+## Proposed responsibilities
 
-- **Orquestador:** coordinar tareas y recopilar respuestas trazables.
-- **Agente de datos:** explorar calidad, disponibilidad y anomalías de proveedores.
-- **Agente de spot:** aportar contexto local documentado.
-- **Agente de especie y técnica:** relacionar evidencia sobre lubina y spinning desde costa.
-- **Agente de normativa:** localizar y resumir fuentes oficiales vigentes.
-- **Agente de seguridad:** explicar riesgos identificados por servicios verificables.
-- **Agente de comunidad:** organizar señales agregadas respetando privacidad.
-- **Crítico:** buscar contradicciones, falta de evidencia y exceso de certeza.
-- **Evaluador:** comparar recomendaciones, versiones y resultados históricos.
+- **Orchestrator:** coordinate tasks and collect traceable responses.
+- **Data agent:** explore provider quality, availability, and anomalies.
+- **Spot agent:** provide documented local context.
+- **Species and technique agent:** relate evidence about European seabass and shore spinning.
+- **Regulations agent:** locate and summarize current official sources.
+- **Safety agent:** explain risks identified by verifiable services.
+- **Community agent:** organize aggregate signals while respecting privacy.
+- **Critic:** identify contradictions, insufficient evidence, and excessive certainty.
+- **Evaluator:** compare recommendations, versions, and historical outcomes.
 
-## Límites de autoridad
+## Authority boundaries
 
-- No se implementarán en el MVP.
-- Servicios verificables realizarán scoring, seguridad y aplicación de reglas.
-- Los LLM podrán coordinar o explicar, pero no serán la única autoridad.
-- Ningún agente podrá convertir una fuente no verificada en certeza legal, de seguridad o pesquera.
-- Las respuestas futuras deberán conservar fuentes, fecha, versión y nivel de confianza.
+- They will not be implemented in the MVP.
+- Verifiable services will perform scoring, safety, and rule enforcement.
+- LLMs may coordinate or explain, but will not be the sole authority.
+- No agent may turn an unverified source into legal, safety, or fishing certainty.
+- Future responses must preserve sources, date, version, and confidence level.
 
-## Condiciones previas
+## Preconditions
 
-- `needs-validation`: demostrar primero utilidad del flujo sin agentes.
-- `needs-validation`: definir evaluación, supervisión, costes y comportamiento ante ausencia o conflicto de fuentes.
-- `needs-validation`: establecer límites de privacidad y auditoría.
-
+- `needs-validation`: first demonstrate the usefulness of the flow without agents.
+- `needs-validation`: define evaluation, supervision, costs, and behavior when sources are absent or conflict.
+- `needs-validation`: establish privacy and audit boundaries.

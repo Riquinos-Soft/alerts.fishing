@@ -1,21 +1,20 @@
-# Registro de decisiones
+# Decision log
 
-Los ADR conservan el contexto y las consecuencias de decisiones significativas. Una decisión aceptada puede describir una dirección todavía no implementada.
+ADRs preserve the context and consequences of significant decisions. An accepted decision may describe a direction that has not yet been implemented.
 
-## Estados
+## States
 
-- `proposed`: en discusión.
-- `decided`: aceptada como dirección actual.
-- `superseded`: sustituida por otro ADR.
-- `deprecated`: ya no debe guiar trabajo nuevo.
+- `proposed`: under discussion.
+- `decided`: accepted as the current direction.
+- `superseded`: replaced by another ADR.
+- `deprecated`: should no longer guide new work.
 
-## Decisiones
+## Decisions
 
-- [ADR-0001: repositorio independiente](ADR-0001-independent-repository.md) — `decided`.
-- [ADR-0002: monolito modular](ADR-0002-modular-monolith.md) — `decided`; no implementado.
-- [ADR-0003: web primero](ADR-0003-web-first.md) — `decided`; no implementado.
+- [ADR-0001: independent repository](ADR-0001-independent-repository.md) — `decided`.
+- [ADR-0002: modular monolith](ADR-0002-modular-monolith.md) — `decided`; not implemented.
+- [ADR-0003: web first](ADR-0003-web-first.md) — `decided`; not implemented.
 
-## Proceso
+## Process
 
-Utilizar la [plantilla de ADR](../templates/adr-template.md) para decisiones arquitectónicas significativas. Un ADR nuevo no debe reescribir silenciosamente una decisión anterior: debe enlazarla y declarar si la sustituye.
-
+Use the [ADR template](../templates/adr-template.md) for significant architectural decisions. A new ADR must not silently rewrite a previous decision: it must link to it and state whether it supersedes it.
