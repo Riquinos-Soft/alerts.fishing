@@ -14,6 +14,7 @@ ADRs preserve the context and consequences of significant decisions. An accepted
 - [ADR-0001: independent repository](ADR-0001-independent-repository.md) — `decided`.
 - [ADR-0002: modular monolith](ADR-0002-modular-monolith.md) — `decided`; not implemented.
 - [ADR-0003: web first](ADR-0003-web-first.md) — `decided`; not implemented.
+- [ADR-0005: initial vertical slice delivery](ADR-0005-initial-vertical-slice-delivery.md) — D1 and D2 `decided`; D3 `proposed` with a reversible spike authorized; not implemented.
 
 ## Process
 

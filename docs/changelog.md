@@ -4,6 +4,7 @@ Records significant product, architecture, research, and specification changes. 
 
 ## 2026-09-05
 
+- D1 and D2 `decided`; D3 `proposed`, spike authorized: recorded the frontend-only current-run demonstration boundary, pinned `apps/web/` scaffold stack and licenses, and reversible Nuxt UI visual-spike limits; no scaffold, dependencies, tests, or application functionality exist yet.
 - `proposed`: added the implementation-ready plan, synthetic scenario catalog, UI states, acceptance-test traceability, delivery increments, and validation gates for Specification 001; application implementation has not started.
 
 ## 2026-09-04

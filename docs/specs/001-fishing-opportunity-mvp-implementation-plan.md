@@ -5,11 +5,11 @@
 - **Implementation:** not started.
 - **Last updated:** 2026-09-05.
 
-This plan translates the accepted product contract into a reviewable first vertical slice. It does not close the parent specification, prove any acceptance criterion, approve a technical stack, or describe application behavior that already exists. Implementation may begin only after the decision gates in this plan are explicitly approved.
+This plan translates the accepted product contract into a reviewable first vertical slice. [ADR-0005](../decisions/ADR-0005-initial-vertical-slice-delivery.md) records approval of the D1 delivery boundary and D2 initial scaffold stack, and authorizes D3 only as a reversible spike. This plan does not close the parent specification, prove any acceptance criterion, or describe application behavior that already exists.
 
 ## Problem
 
-Specification 001 defines an end-to-end fishing decision and learning journey, but the repository does not yet define the smallest delivery shape, synthetic examples, UI states, test evidence, or ordered implementation increments. Without that detail, implementation could accidentally broaden scope, make mock data appear real, merge score with confidence or safety, or omit blank sessions.
+Specification 001 defines an end-to-end fishing decision and learning journey, but before this plan the repository did not define the smallest delivery shape, synthetic examples, UI states, test evidence, or ordered implementation increments. Without that detail, implementation could accidentally broaden scope, make mock data appear real, merge score with confidence or safety, or omit blank sessions.
 
 ## Goals
 
@@ -29,8 +29,8 @@ Specification 001 defines an end-to-end fishing decision and learning journey, b
 - A scoring formula, calibrated weights, catch probability, forecast accuracy, or promises of catches.
 - API or OpenAPI operations, endpoints, server implementation, databases, provider adapters, authentication, accounts, or durable cross-device persistence.
 - Payments, Telegram, YouTube, social features, machine learning, LLMs, agents, and native applications.
-- Installing dependencies or choosing package versions as part of this documentation increment.
-- Approving Nuxt, Vue, TypeScript, Nuxt UI v4, fonts, icons, or the Balanced Atlantic terminal visual direction.
+- Installing dependencies, generating the application scaffold, or implementing behavior as part of this documentation increment.
+- Final adoption of fonts, icons, or the Balanced Atlantic terminal visual direction before D3 spike evidence is reviewed.
 
 ## Fixed product boundary
 
@@ -148,22 +148,30 @@ M-01, M-02, and M-03 form the minimum three-spot comparison. M-02 proves that sa
 
 Loading, server error, authentication, synchronization, and provider outage states are not part of a frontend-only deterministic catalog. If the approved framework introduces hydration or asset-loading states, their treatment must be specified in the implementation increment rather than presented here as existing behavior.
 
-### Visual input pending approval
+### Visual input authorized for a reversible spike
 
-The [Balanced Atlantic terminal research direction](../research/ui-system-direction.md#direction-2-balanced-atlantic-terminal) is `proposed` visual input only. It may inform hierarchy, technical borders, restrained pixel accents, dark-first exploration with light-theme parity, and short reduced-motion-aware transitions. It is not implemented or decided, and its palette, typography, component library, accessibility, performance, licensing, and outdoor comprehension require explicit approval and validation before adoption. Technical styling must not imply that synthetic data is precise or authoritative.
+The [Balanced Atlantic terminal research direction](../research/ui-system-direction.md#direction-2-balanced-atlantic-terminal) remains `proposed`, but D3 authorizes an isolated, reversible Nuxt UI v4 spike. It may test hierarchy, restrained pixel accents, moderate technical geometry, a dark-first presentation with complete accessible light-mode parity, brief precise reduced-motion-aware transitions, a collapsible desktop left sidebar, and mobile-appropriate navigation. Final adoption is not decided; palette, typography, components, accessibility, performance, licensing, outdoor comprehension, differentiation, and override cost require spike evidence and explicit review. Technical styling must not imply that synthetic data is precise or authoritative.
 
-## Proposed delivery architecture
+## Approved delivery boundary and scaffold stack
 
 ### Decision gates
 
 - **Decided:** web-first, as recorded by [ADR-0003](../decisions/ADR-0003-web-first.md).
-- **Proposed for this slice:** a frontend-only web demonstration backed by deterministic in-process mock fixtures and an in-memory session/feedback adapter. There is no real API and no durable storage; the record lasts for the current demonstration run and supports the confirmation evidence.
-- **Proposed, pending explicit approval:** Nuxt, Vue, and TypeScript. No dependency or version is selected by this plan.
-- **Proposed, pending explicit approval and a spike:** Nuxt UI v4 and the Balanced Atlantic terminal direction. Research does not authorize installation.
+- **D1 — `decided`:** a frontend-only web demonstration backed by deterministic in-process mock fixtures and an in-memory session/feedback adapter. There is no real API or durable storage; the record lasts only for the current demonstration run and supports the confirmation evidence.
+- **D2 — `decided`:** the initial scaffold lives at `apps/web/` and uses the exact toolchain, application, UI, and test versions recorded in [ADR-0005](../decisions/ADR-0005-initial-vertical-slice-delivery.md). The decision does not mean the path, manifest, lockfile, dependencies, or scaffold exists yet.
+- **D3 — `proposed`, spike authorized:** test Nuxt UI v4 with the Balanced Atlantic terminal direction under the reversible boundary in ADR-0005. Final visual adoption remains pending evidence.
 - **Outside this slice:** API and OpenAPI operations, endpoints, backend/provider adapters, authentication, accounts, databases, browser storage intended as durable persistence, and external data integrations.
 - **Decided direction but not implemented by this slice:** modular monolith. The frontend mock delivery must not establish client-owned fishing rules as the future domain boundary.
 
-Gate D1 approves the frontend-only delivery boundary and current-run retention interpretation. Gate D2 approves a concrete frontend stack and pinned versions/licenses. Gate D3 approves or replaces the visual direction after the smallest representative spike. Application work is not ready until D1 and D2 are approved; styled component work is not ready until D3 is approved.
+The D1 and D2 gates are satisfied for the initial scaffold. D3 permits only the smallest representative spike; production adoption of the visual direction still requires an explicit approve, revise, or reject decision after evidence is reviewed.
+
+### D2 version and license record
+
+- **Toolchain:** Node.js `24.19.0` and npm `11.17.0`; these are toolchain versions, not application packages.
+- **MIT application packages:** Nuxt `4.5.2`, Vue `3.5.42`, Nuxt UI `4.11.0`, Vitest `4.1.11`, `@nuxt/test-utils` `4.2.0`, and `@vue/test-utils` `2.5.0`.
+- **Apache-2.0 application packages:** TypeScript `7.0.2` and `@playwright/test` `1.63.0`.
+
+Nuxt UI is selected for the spike because it directly integrates with Nuxt, SSR, TypeScript, and color mode; covers the small vertical's common components; builds on Reka UI's accessibility foundation; supports semantic tokens and typed variants; is MIT-licensed; and includes a `DashboardSidebar` ecosystem for the proposed navigation test. Its default styling is not the product identity, and its foundation does not replace product-level accessibility validation.
 
 ### Conceptual responsibilities
 
@@ -173,7 +181,7 @@ Gate D1 approves the frontend-only delivery boundary and current-run retention i
 - **Presentation:** renders list, detail, form, validation, and confirmation states without creating domain facts.
 - **Test fixtures and evidence:** reuse catalog identifiers and assertions without copying an alternative source of truth.
 
-Exact application file paths will be fixed in the first approved application increment because no framework structure exists yet. Until D2, the conceptually owned areas are `mock catalog`, `domain-facing demonstration logic`, `journey state`, `list/detail presentation`, and `session/feedback presentation`; naming them does not claim those areas exist.
+The approved application root is `apps/web/`; exact files beneath it will be established by the scaffold and later implementation increments. The conceptually owned areas are `mock catalog`, `domain-facing demonstration logic`, `journey state`, `list/detail presentation`, and `session/feedback presentation`; naming them does not claim those areas or the application root exist.
 
 ## Acceptance-criterion traceability and derived tests
 
@@ -284,19 +292,19 @@ The identifiers below are local traceability labels. Each entry quotes one paren
 
 Each increment is intended to be one small, reversible PR. Documentation, application, tests, and infrastructure remain separate when they express different intentions. Later increments depend on explicit approval and must follow the repository's atomic-commit rules.
 
-### Increment 0 — approve the implementation boundary
+### Increment 0 — record delivery decisions
 
 - **Intent:** documentation only.
-- **Conceptually owned files/areas:** this plan, parent Spec 001 cross-link, Home navigation, and changelog.
-- **Dependencies:** reviewer approval of D1; explicit decision on current-run-only retention.
+- **Conceptually owned files/areas:** ADR-0005, this plan, the decision index, and changelog.
+- **Dependencies:** explicit user approval of D1 and D2 and reversible-spike authorization for D3.
 - **Validations:** Markdown links, criterion traceability, terminology/claim scans, complete diff review.
-- **Completion condition:** plan remains `proposed` until accepted; no application or dependency files change.
+- **Completion condition:** the decisions are recorded without changing the plan's `proposed` status, closing Spec 001, or adding application and dependency files.
 
-### Increment 1 — approve stack and minimal shell
+### Increment 1 — create the approved minimal shell
 
 - **Intent:** infrastructure/scaffolding only, after D2.
-- **Conceptually owned areas:** package manifest and lockfile, framework configuration, minimal application shell, and tool configuration; exact paths depend on approved stack conventions.
-- **Dependencies:** D1 and D2, recorded versions/licenses, and justified dependencies.
+- **Conceptually owned areas:** `apps/web/` package manifest and lockfile, framework configuration, minimal application shell, and tool configuration.
+- **Dependencies:** the decided D1 and D2 boundaries in ADR-0005, including recorded versions/licenses and justified dependencies.
 - **Validations:** framework-provided install/build/type-check/lint categories discovered from the approved manifest; clean dependency/license review. Commands must be recorded only after scripts exist.
 - **Completion condition:** a minimal web shell runs without fishing behavior, mock scenarios, or claims that Spec 001 is implemented.
 
@@ -328,7 +336,7 @@ Each increment is intended to be one small, reversible PR. Documentation, applic
 
 - **Intent:** application presentation/state only.
 - **Conceptually owned areas:** session form, optional catch collection, feedback fields, current-run state adapter, and confirmation view.
-- **Dependencies:** Increment 4 and D1 current-run retention approval.
+- **Dependencies:** Increment 4 and the decided D1 current-run retention boundary.
 - **Validations:** component/integration and end-to-end categories for AC-010 through AC-012, including one catch session and one blank session; form accessibility.
 - **Completion condition:** both outcomes save without bias, feedback is confirmed, and no durable storage or account claim is introduced.
 
@@ -340,13 +348,13 @@ Each increment is intended to be one small, reversible PR. Documentation, applic
 - **Validations:** all mapped end-to-end paths, automated and manual accessibility categories, privacy scan, and facilitated comprehension checks.
 - **Completion condition:** evidence is linked to all AC-001 through AC-013, with failures and pending manual evidence explicit.
 
-### Increment 7 — optional visual-system spike and decision
+### Increment 7 — authorized visual-system spike and decision
 
-- **Intent:** isolated research/spike first; production styling only after D3.
+- **Intent:** isolated, reversible research spike; production adoption only after a later final D3 decision.
 - **Conceptually owned areas:** representative card, detail safety gate, blank-session form, semantic tokens, light/dark samples, and spike measurements.
-- **Dependencies:** D2; the [UI research](../research/ui-system-direction.md); version/license revalidation.
+- **Dependencies:** decided D2; D3 spike authorization; the [UI research](../research/ui-system-direction.md); version/license revalidation.
 - **Validations:** comprehension, keyboard, screen readers, contrast, 320 px/200% reflow, reduced motion, visual differentiation, dependency/license inventory, and measured production artifacts against a separately approved budget.
-- **Completion condition:** approve, revise, or reject Nuxt UI v4 and Balanced Atlantic terminal explicitly; discard the spike if rejected. A spike alone is not implementation of the vertical slice.
+- **Completion condition:** gather enough evidence to approve, revise, or reject Balanced Atlantic terminal on Nuxt UI explicitly; discard the spike if rejected. A spike alone is neither final visual adoption nor implementation of the vertical slice.
 
 ### Increment 8 — synchronize completion documentation
 
@@ -386,32 +394,32 @@ Evidence should include the command, exact revision, environment, result, and an
 - **Current-run retention is mistaken for persistence.** Label the demonstration boundary and keep accounts, browser persistence, database storage, and synchronization outside the slice.
 - **Frontend fixtures become the future domain or API contract.** Isolate them behind domain-facing interfaces and do not invent endpoints or client-branded concepts.
 - **A visual terminal style implies certainty.** Treat the direction as an optional input, validate comprehension, and prioritize plain-language limitations over decoration.
-- **Unapproved dependencies create lock-in.** Require D2/D3, pin and inventory approved versions/licenses, and isolate/discard the spike.
+- **Approved dependencies create lock-in or resolve incompatibly.** Preserve the exact D2 record, inventory resolved versions/licenses during scaffolding, and require a follow-up decision for any change; isolate and discard the D3 spike if necessary.
 - **Accessibility is inferred from a component library.** Require product-level automated and manual validation for actual states.
 
 ## Assumptions and open questions
 
 - **Assumption:** a deterministic frontend-only mock is sufficient to evaluate the parent journey before real integrations.
-- **Assumption:** current-run in-memory retention provides reviewable confirmation without claiming durable persistence.
+- **Decided boundary:** current-run in-memory retention provides reviewable confirmation without durable browser persistence, account history, or synchronization.
 - **Assumption:** relative windows anchored to a visible demonstration clock avoid implying a current forecast.
-- `needs-validation`: does D1's current-run retention satisfy reviewers' interpretation of “retains,” or is browser-local persistence required under a separate privacy specification?
 - `needs-validation`: what minimum session effort fields are required beyond “did you fish,” zero or more catches, and usefulness feedback?
 - `needs-validation`: what response format best measures usefulness of the decision and explanation without false precision?
 - `needs-validation`: what confidence vocabulary is most understandable without resembling a probability?
 - `needs-validation`: which exact mock factor explanations are useful and clearly fictional?
 - `needs-validation`: which safety labels and invalidation copy are understood without suggesting real authority?
 - `needs-validation`: what non-sensitive representation of each spot name avoids implying verified boundaries or access?
-- `needs-validation`: which stack, versions, licenses, and commands are approved under D2?
+- `needs-validation`: do the approved D2 versions resolve together and match their recorded licenses when the scaffold and lockfile exist?
+- `needs-validation`: which exact scaffold, build, type-check, and test commands exist after `apps/web/` is generated?
 - `needs-validation`: does the Balanced Atlantic terminal spike pass comprehension, accessibility, responsive, performance, and licensing gates under D3?
 
 ## Validation gates
 
-- **V0 — plan review:** scope, states, catalog, all 13 criterion mappings, tasks, and claims are reviewed; this plan may then move from `proposed` only by explicit approval.
-- **V1 — delivery boundary:** D1 is approved, including current-run retention and the exclusion of API/provider/auth/persistence integrations.
-- **V2 — technical readiness:** D2 fixes a stack, exact versions/licenses, repository paths, and real validation commands.
+- **V0 — plan review:** scope, states, catalog, all 13 criterion mappings, tasks, and claims remain reviewable; the plan stays `proposed` until separately accepted.
+- **V1 — delivery boundary: passed by decision.** D1 approves current-run retention and excludes API, provider, authentication, database, durable browser persistence, and live-data integrations.
+- **V2 — scaffold decision: passed; resolution evidence pending.** D2 fixes `apps/web/`, the exact toolchain and packages, and their recorded licenses. Actual commands, compatibility, resolved licenses, build, and tests can be verified only after scaffolding and must not be claimed yet.
 - **V3 — behavior evidence:** domain, component, and end-to-end tests cover AC-001 through AC-013 without omitted or weakened criteria.
 - **V4 — human quality:** accessibility, comprehension, mock-data clarity, privacy, and safety-precedence reviews pass or retain visible blockers.
-- **V5 — visual adoption:** D3 approves, revises, or rejects the proposed visual input using spike evidence.
+- **V5 — visual adoption:** D3 is authorized only for a reversible spike; final adoption must approve, revise, or reject the proposed visual input using spike evidence.
 - **V6 — completion sync:** implementation and documentation are compared line by line before any completion claim or parent checkbox/status change.
 
 ## Rollback and reversibility
@@ -420,21 +428,23 @@ Evidence should include the command, exact revision, environment, result, and an
 - The deterministic catalog can be replaced behind its boundary without changing future provider contracts because this slice defines no endpoints.
 - The in-memory state adapter can be replaced by approved persistence later without changing the parent fishing concepts.
 - Semantic tokens must not include library or commercial product names, allowing the visual spike or component library to be removed.
-- Rejecting D2 or D3 leaves this documentation plan and parent specification intact; no dependency needs to be retained.
+- Replacing D2 through a follow-up decision or rejecting D3 leaves this documentation plan and parent specification intact; no rejected spike dependency or styling needs to be retained.
 - Rollback must never rewrite evidence to imply an invalidated or removed behavior still exists.
 
-## Definition of ready
+## Readiness
 
-Application implementation is ready only when:
+The documentation gates for Increment 1 are satisfied: D1 and D2 authorize creation of the minimal scaffold at `apps/web/` with the recorded versions and licenses. No scaffold, dependency, validation command, test, or application behavior exists yet. The D3 authorization also permits an isolated reversible spike, but not production adoption of the proposed visual direction.
 
-- V0 and V1 pass and the plan's status change, if any, is explicit;
-- D1 and D2 are approved, with exact versions, licenses, paths, and actual repository commands documented;
+Behavior increments after the scaffold are ready only when:
+
+- the relevant proposed plan content and synthetic M-01 through M-04 fixtures are reviewed for that increment;
+- the approved D2 versions resolve compatibly, their licenses are confirmed from actual dependency artifacts, and real repository commands are documented;
 - M-01 through M-04 and their copy are reviewed as synthetic, non-local claims;
 - AC-001 through AC-013 have named tests and evidence owners;
 - open questions that affect the journey or data model are resolved or bounded for the slice;
 - no prerequisite requires an API, provider, authentication, or persistence integration.
 
-Styled implementation additionally requires D3. Unstyled behavior can be reviewed before D3 if the approved stack supports it.
+The authorized D3 spike may test styled components now. Reuse of its visual choices in production still requires final D3 adoption based on evidence; unstyled behavior does not depend on that adoption.
 
 ## Definition of done
 
