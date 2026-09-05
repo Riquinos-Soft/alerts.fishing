@@ -11,6 +11,7 @@ Thumbs.db
 *~
 
 # Local environments and secrets
+node_modules/
 .env
 .env.*
 !.env.example
@@ -20,4 +21,3 @@ Thumbs.db
 *.pfx
 credentials.json
 secrets.*
-
