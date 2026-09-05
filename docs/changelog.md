@@ -2,6 +2,10 @@
 
 Records significant product, architecture, research, and specification changes. It does not replace the Git history.
 
+## 2026-09-05
+
+- `proposed`: added the implementation-ready plan, synthetic scenario catalog, UI states, acceptance-test traceability, delivery increments, and validation gates for Specification 001; application implementation has not started.
+
 ## 2026-09-04
 
 - `decided`: established English as the canonical language across the existing documentation; this language-only migration does not implement the product or change its scope.

@@ -16,6 +16,7 @@ Main index and documentary source of truth for the product.
 - [Feature map](product/feature-map.md)
 - [Planned architecture](architecture/overview.md)
 - [Specification 001: fishing opportunity MVP](specs/001-fishing-opportunity-mvp.md)
+- [Proposed implementation plan for Specification 001](specs/001-fishing-opportunity-mvp-implementation-plan.md)
 - [Roadmap](roadmap/roadmap.md)
 - [Backlog](roadmap/backlog.md)
 - [Decisions](decisions/README.md)

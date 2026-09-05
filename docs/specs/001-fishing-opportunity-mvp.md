@@ -4,6 +4,8 @@
 
 The specification is accepted as the documentary contract for the first vertical slice. Its documentary completion does not imply that the acceptance criteria have been met or that an implementation exists.
 
+The reviewable technical breakdown is recorded in the [proposed implementation plan](001-fishing-opportunity-mvp-implementation-plan.md); it does not change this specification's `decided` status or indicate that implementation has started.
+
 ## Problem
 
 Generic weather information forces anglers to interpret scattered variables without sufficient spot context. What is missing is a local decision that explains potential, data quality, and safety restrictions and can be evaluated after the session.
